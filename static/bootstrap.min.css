@@ -150,10 +150,7 @@ address {
   font-style: normal;
   line-height: inherit;
 }
-ol,
-ul {
-  padding-left: 2rem;
-}
+
 dl,
 ol,
 ul {
@@ -202,12 +199,12 @@ sub {
 sup {
   top: -0.5em;
 }
-a {
-  color: #0d6efd;
-  text-decoration: underline;
+
+.item-contents {
+  color: white;
 }
 a:hover {
-  color: #669201;
+  color: black;
 }
 a:not([href]):not([class]),
 a:not([href]):not([class]):hover {

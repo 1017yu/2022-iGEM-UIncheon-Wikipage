@@ -1,3 +1,7 @@
+* {
+  list-style: none;
+}
+
 body {
   padding-top: 56px;
 }
@@ -8,8 +12,8 @@ body {
   background-color: #343a40 !important;
 }
 .bg-hero {
-  background-color: #b1bce6;
-  margin-top: 40px !important;
+  background-color: #b7d3df;
+  margin-top: 0px !important;
 }
 
 /* CALLOUT */
@@ -55,17 +59,17 @@ footer a:hover {
 }
 
 .navbar {
-  background-color: #06283d;
+  background-color: #b1bce6;
 }
 
 .navbar-main {
   align-items: center;
-  margin-top: 15px;
+  margin-top: 25px;
 }
 
 .inner {
   width: 1300px;
-  height: 80px;
+  height: 70px;
   margin: 0 auto;
   position: relative;
 }
@@ -79,30 +83,77 @@ footer a:hover {
   margin: auto;
 }
 
-.menu {
-  margin-left: 18rem;
+/* .menu {
+  display: flex;
+  margin-left: 16rem;
   font-size: 15px;
   position: fixed;
-  display: flex;
   flex-direction: row;
-  padding-left: 0;
+  padding-left: 10px 20px 34px 20px;
   margin-bottom: 0;
   list-style: none;
   text-align: left;
 }
+*/
 
-.nav-item {
-  padding: 0 10px 0 10px;
+.menu {
+  display: flex;
+  position: absolute;
+  right: 180px;
+  top: 22px;
   z-index: 1;
+  text-decoration-line: none;
 }
 
-.nav-item:hover {
-  transition: 0.2s;
-  text-decoration: underline;
+.menu .menu-item {
+  text-align: left;
 }
 
-.nav-link {
-  color: #dff6ff;
+.menu .menu-item .item__name {
+  padding: 10px 70px 32px 0px;
+  font-size: 16px;
+  text-align: left;
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
 }
 
-/* dropdown */
+.menu .menu-item:hover .item__name {
+  color: black;
+  transition: 0.3s;
+}
+
+.menu .has-sub-menu:hover .sub-menu {
+  display: block;
+  text-decoration: none;
+}
+
+.menu .sub-menu {
+  text-align: left;
+  text-decoration: none;
+  padding-inline-start: 0;
+  font-size: 14px;
+  padding: 15px 0 0 0;
+  display: none;
+}
+
+.menu .sub-menu > li {
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+.menu .sub-menu > li > a {
+  text-decoration: none;
+  color: #898aa6;
+  font-weight: 600;
+  font-size: 15px;
+}
+
+.menu .sub-menu > li:hover {
+  padding-left: 3px;
+  transition: 0.3s;
+}
+
+.menu .sub-menu > li:hover > a {
+  color: black;
+}
