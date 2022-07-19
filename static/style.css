@@ -8,7 +8,8 @@ body {
   background-color: #343a40 !important;
 }
 .bg-hero {
-  background-color: #00ccff;
+  background-color: #b1bce6;
+  margin-top: 40px !important;
 }
 
 /* CALLOUT */
@@ -52,3 +53,56 @@ footer a:hover {
   color: white;
   text-decoration: underline;
 }
+
+.navbar {
+  background-color: #06283d;
+}
+
+.navbar-main {
+  align-items: center;
+  margin-top: 15px;
+}
+
+.inner {
+  width: 1300px;
+  height: 80px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.inner .logo {
+  height: 75px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+
+.menu {
+  margin-left: 18rem;
+  font-size: 15px;
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  padding-left: 0;
+  margin-bottom: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.nav-item {
+  padding: 0 10px 0 10px;
+  z-index: 1;
+}
+
+.nav-item:hover {
+  transition: 0.2s;
+  text-decoration: underline;
+}
+
+.nav-link {
+  color: #dff6ff;
+}
+
+/* dropdown */
