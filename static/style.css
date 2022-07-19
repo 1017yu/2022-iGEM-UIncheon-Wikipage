@@ -1,5 +1,6 @@
 * {
   list-style: none;
+  font-family: "Jua", sans-serif;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
   background-color: #343a40 !important;
 }
 .bg-hero {
-  background-color: #b7d3df;
+  background-color: #54bab9;
   margin-top: 0px !important;
 }
 
@@ -59,7 +60,7 @@ footer a:hover {
 }
 
 .navbar {
-  background-color: #b1bce6;
+  background-color: #18978f;
 }
 
 .navbar-main {
@@ -144,7 +145,7 @@ footer a:hover {
 
 .menu .sub-menu > li > a {
   text-decoration: none;
-  color: #898aa6;
+  color: #f9f9f9;
   font-weight: 600;
   font-size: 15px;
 }
