@@ -86,6 +86,7 @@ footer a:hover {
   bottom: 0;
   left: 0;
   margin: auto;
+  margin-top: 5px;
 }
 
 /* .menu {
@@ -118,7 +119,7 @@ footer a:hover {
   padding: 10px 70px 32px 0px;
   font-size: 16px;
   text-align: left;
-  color: #fff;
+  color: #000000;
   font-weight: 600;
   text-decoration: none;
 }
@@ -149,7 +150,7 @@ footer a:hover {
 
 .menu .sub-menu > li > a {
   text-decoration: none;
-  color: #f9f9f9;
+  color: #000000;
   font-weight: 600;
   font-size: 15px;
 }
@@ -177,15 +178,30 @@ footer a:hover {
 }
 
 .visual {
-  background-image: url("https://static.igem.wiki/teams/4310/wiki/visual-bg-image.png");
-  background-position: center;
-  margin-top: -84px;
+  /* background-image: url("https://static.igem.wiki/teams/4310/wiki/visual-bg-image.png"); */
+  width: 1920px;
+  height: 1080px;
+  position: absolute;
+  /* 16비율 */
+  left: 50%;
+  margin-left: calc(1920px / -2);
+  /* 9비율 */
+  margin-top: -154px;
 }
 
 .visual__inner {
   height: 580px;
   width: 4000px;
   background-repeat: no-repeat;
-
   top: 100;
+}
+
+#iframe {
+  object-fit: cover;
+  position: absolute;
+  top: 100;
+  margin-top: -104px;
+  left: 0;
+  height: 100%;
+  width: 100%;
 }
