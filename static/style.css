@@ -1,7 +1,6 @@
-@import "compass/css3";
 * {
   list-style: none;
-  font-family: "Jua", sans-serif;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 body {
@@ -65,6 +64,7 @@ footer a:hover {
   position: fixed;
   width: 100%;
   top: 0;
+  backdrop-filter: blur(10px);
   /* background-color: #c4dfaa; */
 }
 
@@ -128,7 +128,7 @@ footer a:hover {
   padding: 10px 70px 32px 0px;
   font-size: 16px;
   text-align: left;
-  color: #00976a;
+  color: #000;
   font-weight: 600;
   text-decoration: none;
 }
@@ -224,17 +224,19 @@ footer a:hover {
   height: 945px;
   background-color: rgba(0, 0, 0, 0.1);
   background-image: url("https://static.igem.wiki/teams/4310/wiki/video-cover-pattern.png");
-  opacity: 0.5;
+  opacity: 1;
   z-index: 10;
 }
 
 .title-holder {
   position: absolute;
   top: 380px;
-  right: 260px;
+  right: 300px;
   line-height: normal;
   font-size: 58px;
   color: #fff;
+  font-weight: 600;
+  font-style: italic;
   z-index: 11;
 }
 
@@ -244,27 +246,42 @@ footer a:hover {
 
 /*   SECTION-1   */
 
-.content {
-  background-color: #c3dadd;
-}
-
 .sec-1 {
-  padding: 160px 5px;
+  padding: 0;
+  background-color: #c3dadd;
+  height: 720px;
+  vertical-align: middle;
 }
 
 .sec-1 .container-1 {
-  padding: 0 100px;
-  height: 520px;
-  margin: 0, 0;
+  padding: calc(444px / 2) 100px;
 }
 
 .sec-1 .container-1 .column .col-1 {
 }
 
-.sec-1 .container-1 > span {
-  font-size: 60px;
+.sec-1 .container-1 .col-1 .text-mask > span {
+  font-size: 70px;
+  line-height: 64px;
 }
 
+.sec-1 .container-1 .col-2 {
+  margin-top: 20px;
+}
+
+.sec-1 .container-1 .col-2 .text-mask > span {
+  font-size: 26px;
+  font-weight: lighter;
+  line-height: 32px;
+}
+
+.sec-1 .floating__1 {
+  position: absolute;
+  right: 0;
+  margin: -100px 200px 300px 0;
+}
+
+/* footer */
 .footer {
   margin-top: 1000px;
 }

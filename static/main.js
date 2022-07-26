@@ -2,13 +2,13 @@ const badgeEl = document.getElementById("uibadges");
 const menu = document.getElementById("inner");
 const hiddenDiv = document.getElementById("gnb-white");
 const titleholder = document.querySelector("title-holder");
+
 // const toTopEl = document.querySelector("#to-top");
 // 페이지에 스크롤 이벤트를 추가!
 // 스크롤이 지나치게 자주 발생하는 것을 조절(throttle, 일부러 부하를 줌)
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    console.log(MouseEvent.pageY);
     // 페이지 스크롤 위치가 500px이 넘으면.
     if (window.scrollY > 500) {
       // Badge 요소 숨기기!

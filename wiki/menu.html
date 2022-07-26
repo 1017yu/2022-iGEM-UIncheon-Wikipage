@@ -18,13 +18,11 @@
       </li>
 
       <!---- TEAM ---->
-      <li class="menu-item menu-team has-sub-menu">
-        <a class="item__name" id="item__name">Team</a>
+      <li class="menu-item has-sub-menu">
+        <a class="item__name" id="item__name" href="{{ url_for('pages', page='team') }}"">Team</a>
         <div class="item__contents">
           <ul class="sub-menu">
-            <li>
-              <a href="{{ url_for('pages', page='team') }}">Team</a>
-            </li>
+        
             <li>
               <a href="{{ url_for('pages', page='attributions') }}"
                 >Attributions</a
