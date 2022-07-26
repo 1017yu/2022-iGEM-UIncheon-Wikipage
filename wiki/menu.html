@@ -1,6 +1,7 @@
 
 <nav class="navbar header fixed-top">
-  <div class="inner">
+  <div class="gnb-white" id="gnb-white"></div>
+  <div class="inner" id="inner">
     <!---- TEAM NAME ---->
     <a class="logo" href="{{ url_for('index') }}">
       <img
@@ -13,12 +14,12 @@
     <ul class="menu">
       <!---- HOME ---->
       <li class="menu-item menu-home">
-        <a class="item__name" href="{{ url_for('index') }}"> Home </a>
+        <a class="item__name" id="item__name" href="{{ url_for('index') }}"> Home </a>
       </li>
 
       <!---- TEAM ---->
       <li class="menu-item menu-team has-sub-menu">
-        <a class="item__name">Team</a>
+        <a class="item__name" id="item__name">Team</a>
         <div class="item__contents">
           <ul class="sub-menu">
             <li>
@@ -40,7 +41,7 @@
       
       <!---- PROJECT ---->
       <li class="menu-item has-sub-menu">
-        <a class="item__name" href="#" aria-expanded="false"> Project </a>
+        <a class="item__name" id="item__name" href="#" aria-expanded="false"> Project </a>
         <div class="item__contents">
           <ul class="sub-menu">
             <li>
@@ -95,7 +96,7 @@
 
       <!---- PARTS ---->
       <li class="menu-item has-sub-menu">
-        <a class="item__name" href="#" aria-expanded="false"> Parts </a>
+        <a class="item__name" id="item__name" href="#" aria-expanded="false"> Parts </a>
         <div class="item__contents">
           <ul class="sub-menu">
             <li>
@@ -115,7 +116,7 @@
 
       <!---- SAFETY ---->
       <li class="menu-item has-sub-menu">
-        <a class="item__name" href="{{ url_for('pages', page='safety') }}">
+        <a class="item__name" id="item__name" href="{{ url_for('pages', page='safety') }}">
           Safety
         </a>
       </li>
@@ -124,6 +125,7 @@
       <li class="menu-item has-sub-menu">
         <a
           class="item__name"
+          id="item__name"
           href="{{ url_for('pages', page='human-practices') }}"
         >
           Human Practices
@@ -132,7 +134,7 @@
 
       <!---- AWARDS ---->
       <li class="menu-item has-sub-menu">
-        <a class="item__name" href="#" aria-expanded="false"> Awards </a>
+        <a class="item__name" id="item__name" href="#" aria-expanded="false"> Awards </a>
         <div class="item__contents">
           <ul class="sub-menu">
             <li>
