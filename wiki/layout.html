@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8" />
@@ -43,13 +44,27 @@
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowtrasparent="true"
           controls="0"
-          opacity="0.2"
+          display="block"
         ></iframe>
       </section>
+      <div class="video__cover"></div>
+      <div class="container">
+        <div class="title-holder">
+          <div class="txt-mask">
+            <span>Suggest</span>
+          </div>
+          <div class="txt-mask">
+            <span>Wastewater</span>
+          </div>
+          <div class="txt-mask">
+            <span>Treatment</span>
+          </div>
+        </div>
+      </div>
     </header>
 
     <!-- Page Content -->
-    <div class="container">{% block page_content %}{% endblock %}</div>
+    <div class="content">{% block page_content %}{% endblock %}</div>
 
     <!-- Footer: MUST mention license AND have a link to team wiki's repository on gitlab.igem.org -->
     {% include 'footer.html' %}

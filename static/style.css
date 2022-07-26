@@ -84,7 +84,7 @@ footer a:hover {
 .inner {
   width: 1550px;
   height: 70px;
-  margin: 0 auto;
+  margin: 0 1.2vw;
   position: relative;
 }
 
@@ -128,7 +128,7 @@ footer a:hover {
   padding: 10px 70px 32px 0px;
   font-size: 16px;
   text-align: left;
-  color: #000000;
+  color: #00976a;
   font-weight: 600;
   text-decoration: none;
 }
@@ -191,12 +191,13 @@ footer a:hover {
   /* background-image: url("https://static.igem.wiki/teams/4310/wiki/visual-bg-image.png"); */
   width: 1680px;
   height: 945px;
-  position: absolute;
+  position: relative;
   /* 16비율 */
   left: 50%;
   margin-left: calc(1680px / -2);
   /* 9비율 */
   margin-top: -84px;
+  z-index: 9;
 }
 
 .visual__inner {
@@ -213,4 +214,57 @@ footer a:hover {
   left: 0;
   height: 100%;
   width: 100%;
+}
+
+.video__cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 945px;
+  background-color: rgba(0, 0, 0, 0.1);
+  background-image: url("https://static.igem.wiki/teams/4310/wiki/video-cover-pattern.png");
+  opacity: 0.5;
+  z-index: 10;
+}
+
+.title-holder {
+  position: absolute;
+  top: 380px;
+  right: 260px;
+  line-height: normal;
+  font-size: 58px;
+  color: #fff;
+  z-index: 11;
+}
+
+.title-holder .txt-mask {
+  opacity: 0;
+}
+
+/*   SECTION-1   */
+
+.content {
+  background-color: #c3dadd;
+}
+
+.sec-1 {
+  padding: 160px 5px;
+}
+
+.sec-1 .container-1 {
+  padding: 0 100px;
+  height: 520px;
+  margin: 0, 0;
+}
+
+.sec-1 .container-1 .column .col-1 {
+}
+
+.sec-1 .container-1 > span {
+  font-size: 60px;
+}
+
+.footer {
+  margin-top: 1000px;
 }
