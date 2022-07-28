@@ -3661,13 +3661,7 @@ fieldset:disabled .btn {
 .tab-content > .active {
   display: block;
 }
-.navbar {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-}
+
 .navbar > .container,
 .navbar > .container-fluid,
 .navbar > .container-lg,

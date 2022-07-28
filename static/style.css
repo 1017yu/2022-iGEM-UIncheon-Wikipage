@@ -4,7 +4,16 @@
 }
 
 body {
-  padding-top: 84px;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+.content {
+  width: 100vw;
+  height: 100vh;
 }
 
 .left-aligned {
@@ -16,37 +25,6 @@ body {
 .bg-hero {
   background-color: #54bab9;
   margin-top: 0px !important;
-}
-
-/* CALLOUT */
-.bd-callout {
-  padding: 1.25rem;
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-  border: 1px solid #e9ecef;
-  border-left-width: 0.25rem;
-  border-radius: 0.25rem;
-}
-.bd-callout h4 {
-  margin-bottom: 0.25rem;
-}
-.bd-callout p:last-child {
-  margin-bottom: 0;
-}
-.bd-callout code {
-  border-radius: 0.25rem;
-}
-.bd-callout + .bd-callout {
-  margin-top: -0.25rem;
-}
-.bd-callout-info {
-  border-left-color: #5bc0de;
-}
-.bd-callout-warning {
-  border-left-color: #f0ad4e;
-}
-.bd-callout-danger {
-  border-left-color: #d9534f;
 }
 
 /* footer */
@@ -62,10 +40,12 @@ footer a:hover {
 
 .navbar {
   position: fixed;
-  width: 100%;
+  position: -webkit-sticky;
+  width: 100vw;
   top: 0;
   backdrop-filter: blur(10px);
-  /* background-color: #c4dfaa; */
+  z-index: 1;
+  background-color: transparent;
 }
 
 .navbar-main {
@@ -84,8 +64,14 @@ footer a:hover {
 .inner {
   width: 1550px;
   height: 70px;
-  margin: 0 1.2vw;
-  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background-color: transparent;
+  margin: auto;
 }
 
 .inner .logo {
@@ -93,31 +79,20 @@ footer a:hover {
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 4.5vw;
   margin: auto;
   margin-top: 5px;
 }
 
-/* .menu {
-  display: flex;
-  margin-left: 16rem;
-  font-size: 15px;
-  position: fixed;
-  flex-direction: row;
-  padding-left: 10px 20px 34px 20px;
-  margin-bottom: 0;
-  list-style: none;
-  text-align: left;
-}
-*/
-
 .menu {
+  right: 200px;
+  display: -webkit-flex;
   display: flex;
-  position: absolute;
-  right: 270px;
-  top: 22px;
-  z-index: 1;
-  text-decoration-line: none;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  padding-top: 15px;
 }
 
 .menu .menu-item {
@@ -177,27 +152,11 @@ footer a:hover {
 .uibadges {
   position: fixed;
   top: 132px;
-  right: 12px;
+  right: 36px; /* 12px */
   z-index: 10;
   border-radius: 100px;
   overflow: hidden;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
-}
-
-.uibadges .uibadge {
-}
-
-.visual {
-  /* background-image: url("https://static.igem.wiki/teams/4310/wiki/visual-bg-image.png"); */
-  width: 1680px;
-  height: 945px;
-  position: relative;
-  /* 16비율 */
-  left: 50%;
-  margin-left: calc(1680px / -2);
-  /* 9비율 */
-  margin-top: -84px;
-  z-index: 9;
 }
 
 .visual__inner {
@@ -207,26 +166,35 @@ footer a:hover {
 }
 
 #iframe {
-  object-fit: cover;
-  position: absolute;
-  top: 100;
-  margin-top: -104px;
-  left: 0;
-  height: 100%;
+}
+
+.video__area {
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+}
+
+.video {
   width: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  height: 100%;
+  position: absolute;
+  object-fit: fill;
+  display: flex;
+  margin: 0;
 }
 
 .video__cover {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
-  height: 945px;
+  width: 100vw;
+  height: 100vh;
   background-color: rgba(0, 0, 0, 0.1);
   background-image: url("https://static.igem.wiki/teams/4310/wiki/video-cover-pattern.png");
   opacity: 1;
-  z-index: 10;
 }
 
 .title-holder {
@@ -250,8 +218,12 @@ footer a:hover {
 .sec-1 {
   padding: 0;
   background-color: #c3dadd;
-  height: 1054px;
+  /* height: 1054px; */
   vertical-align: middle;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .sec-1 .container-1 {
@@ -314,21 +286,39 @@ footer a:hover {
   opacity: 0;
 }
 
-/* .sec-1 .sec1-bg {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  vertical-align: middle;
-  border-radius: 10%;
-  z-index: 11;
-} */
-
-.sec-2 {
+.sec-2-1 {
   padding: 0;
   background-color: #fff;
   height: 1054px;
-  vertical-align: middle;
+  display: flex;
 }
+
+.container__2 {
+  overflow-x: hidden;
+  display: flex;
+  position: sticky;
+  top: 0;
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+}
+
+.row-1 {
+  min-width: 50vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 4ch;
+}
+
+.row-1:nth-child(even) {
+  background-color: teal;
+  color: white;
+}
+
 /* footer */
 .footer {
   margin-top: 1000px;

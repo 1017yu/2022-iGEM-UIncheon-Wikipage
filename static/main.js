@@ -45,7 +45,7 @@ window.addEventListener(
 // });
 
 menu.addEventListener("mouseover", function handleMouseOver() {
-  hiddenDiv.style.height = "776px";
+  hiddenDiv.style.height = "516px";
   hiddenDiv.style.transition = "height 0.4s ease";
 });
 
@@ -119,3 +119,60 @@ function floatingObject(selector, delay, size) {
   );
 }
 floatingObject(".sec1-bg", 1, 17);
+
+(function () {
+  init();
+
+  var g_containerInViewport;
+  function init() {
+    setStickyContainersSize();
+    bindEvents();
+  }
+
+  function bindEvents() {
+    window.addEventListener("wheel", wheelHandler);
+  }
+
+  function setStickyContainersSize() {
+    document
+      .querySelectorAll(".sticky-container")
+      .forEach(function (container) {
+        const stikyContainerHeight =
+          container.querySelector(".container__2").scrollWidth;
+        container.setAttribute(
+          "style",
+          "height: " + stikyContainerHeight + "px"
+        );
+      });
+  }
+
+  function isElementInViewport(el) {
+    const rect = el.getBoundingClientRect();
+    return rect.top <= 0 && rect.bottom > document.documentElement.clientHeight;
+  }
+
+  function wheelHandler(evt) {
+    const containerInViewPort = Array.from(
+      document.querySelectorAll(".sticky-container")
+    ).filter(function (container) {
+      return isElementInViewport(container);
+    })[0];
+
+    if (!containerInViewPort) {
+      return;
+    }
+
+    var isPlaceHolderBelowTop =
+      containerInViewPort.offsetTop < document.documentElement.scrollTop;
+    var isPlaceHolderBelowBottom =
+      containerInViewPort.offsetTop + containerInViewPort.offsetHeight >
+      document.documentElement.scrollTop;
+    let g_canScrollHorizontally =
+      isPlaceHolderBelowTop && isPlaceHolderBelowBottom;
+
+    if (g_canScrollHorizontally) {
+      containerInViewPort.querySelector(".container__2").scrollLeft +=
+        evt.deltaY;
+    }
+  }
+})();
