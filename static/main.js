@@ -44,13 +44,15 @@ window.addEventListener(
 //   });
 // });
 
-menu.addEventListener("mouseover", function handleMouseOver() {
+menu.addEventListener("mouseover", function onMouseOver() {
   hiddenDiv.style.height = "516px";
   hiddenDiv.style.transition = "height 0.4s ease";
+  console.log("on");
 });
 
-menu.addEventListener("mouseout", function handleMouseOut() {
+menu.addEventListener("mouseout", function onMouseOut() {
   hiddenDiv.style.height = "0";
+  console.log("out");
 });
 
 const fadeEl__1 = document.querySelectorAll(".title-holder .txt-mask");
