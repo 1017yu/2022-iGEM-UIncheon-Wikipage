@@ -2,6 +2,7 @@ const badgeEl = document.getElementById("uibadges");
 const menu = document.getElementById("inner");
 const hiddenDiv = document.getElementById("gnb-white");
 const titleholder = document.querySelector("title-holder");
+const column__1 = document.querySelector("column-1");
 
 // const toTopEl = document.querySelector("#to-top");
 // 페이지에 스크롤 이벤트를 추가!
@@ -10,7 +11,7 @@ window.addEventListener(
   "scroll",
   _.throttle(function () {
     // 페이지 스크롤 위치가 500px이 넘으면.
-    if (window.scrollY > 500) {
+    if (window.scrollY > 600) {
       // Badge 요소 숨기기!
       gsap.to(badgeEl, 0.3, {
         opacity: 0,
@@ -52,9 +53,9 @@ menu.addEventListener("mouseout", function handleMouseOut() {
   hiddenDiv.style.height = "0";
 });
 
-const fadeEls = document.querySelectorAll(".title-holder .txt-mask");
+const fadeEl__1 = document.querySelectorAll(".title-holder .txt-mask");
 // 나타날 요소들을 하나씩 반복해서 처리!
-fadeEls.forEach(function (fadeEl, index) {
+fadeEl__1.forEach(function (fadeEl, index) {
   // 각 요소들을 순서대로(delay) 보여지게 함!
   gsap.to(fadeEl, 1, {
     delay: (index + 1) * 0.3,
@@ -63,3 +64,58 @@ fadeEls.forEach(function (fadeEl, index) {
     opacity: 1,
   });
 });
+
+const fadeEl__2 = document.querySelectorAll(".column-1 .col-1");
+window.addEventListener(
+  "scroll",
+  _.throttle(function () {
+    if (window.scrollY > 450) {
+      fadeEl__2.forEach(function (fadeEl, index) {
+        gsap.to(fadeEl, 1, {
+          delay: (index + 1) * 0.2,
+          y: -100,
+          opacity: 1,
+        });
+      });
+      // 페이지 스크롤 위치가 500px이 넘지 않으면.
+    } else {
+    }
+  }, 80)
+);
+
+const fadeEl__3 = document.querySelectorAll(".sec1-bg");
+window.addEventListener(
+  "scroll",
+  _.throttle(function () {
+    if (window.scrollY > 350) {
+      fadeEl__3.forEach(function (fadeEl, index) {
+        gsap.to(fadeEl, 1, {
+          delay: index * 0.9,
+          x: -250,
+          opacity: 1,
+        });
+      });
+      // 페이지 스크롤 위치가 500px이 넘지 않으면.
+    } else {
+    }
+  }, 80)
+);
+
+function random(min, max) {
+  return parseFloat((Math.random() * (max - min) + min).toFixed(2));
+}
+
+function floatingObject(selector, delay, size) {
+  gsap.to(
+    selector, // 선택자
+    random(1.5, 2.5), // 애니메이션 동작 시간
+    {
+      delay: random(0, delay), // 얼마나 늦게 애니메이션을 시작할 것인지 지연 시간을 설정.
+      y: size, // `transform: translateY(수치);`와 같음. 수직으로 얼마나 움직일지 설정.
+      repeat: -1, // 몇 번 반복하는지를 설정, `-1`은 무한 반복.
+      yoyo: true, // 한번 재생된 애니메이션을 다시 뒤로 재생.
+      ease: Power2.easeInOut, // Easing 함수 적용.
+    }
+  );
+}
+floatingObject(".sec1-bg", 1, 17);
