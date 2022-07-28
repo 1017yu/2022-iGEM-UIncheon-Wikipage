@@ -90,7 +90,7 @@ window.addEventListener(
     if (window.scrollY > 350) {
       fadeEl__3.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
-          delay: index * 0.9,
+          delay: index * 2.5,
           x: -250,
           opacity: 1,
         });

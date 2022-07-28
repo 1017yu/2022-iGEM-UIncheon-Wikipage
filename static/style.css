@@ -179,13 +179,12 @@ footer a:hover {
   top: 132px;
   right: 12px;
   z-index: 10;
-}
-
-.uibadges .uibadge {
   border-radius: 100px;
   overflow: hidden;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
-  cursor: pointer;
+}
+
+.uibadges .uibadge {
 }
 
 .visual {
@@ -324,6 +323,12 @@ footer a:hover {
   z-index: 11;
 } */
 
+.sec-2 {
+  padding: 0;
+  background-color: #fff;
+  height: 1054px;
+  vertical-align: middle;
+}
 /* footer */
 .footer {
   margin-top: 1000px;
