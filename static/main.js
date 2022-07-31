@@ -140,7 +140,7 @@ floatingObject(".sec1-bg", 1, 17);
       .querySelectorAll(".sticky-container")
       .forEach(function (container) {
         const stikyContainerHeight =
-          container.querySelector(".container__2").scrollWidth;
+          container.querySelector(".container__3").scrollWidth;
         container.setAttribute(
           "style",
           "height: " + stikyContainerHeight + "px"
@@ -173,7 +173,7 @@ floatingObject(".sec1-bg", 1, 17);
       isPlaceHolderBelowTop && isPlaceHolderBelowBottom;
 
     if (g_canScrollHorizontally) {
-      containerInViewPort.querySelector(".container__2").scrollLeft +=
+      containerInViewPort.querySelector(".container__3").scrollLeft +=
         evt.deltaY;
     }
   }
