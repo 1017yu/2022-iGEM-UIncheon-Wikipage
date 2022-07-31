@@ -261,12 +261,13 @@ footer a:hover {
   display: block;
   opacity: 0;
   max-width: 400px;
-  padding-bottom: 3 0.8333vh;
+  padding: 3 0.8333vh;
+  margin-bottom: 20px;
 }
 
 .text-mask > span {
-  font-size: 70px;
-  line-height: 64px;
+  font-size: 4.2vw;
+  line-height: 3.8333vw;
   font-weight: 400;
 }
 
@@ -291,16 +292,30 @@ footer a:hover {
   top: 10vh;
 }
 
-.sec-2-1 {
-  padding: 0;
-  background-color: #fff;
-  height: 1054px;
-  display: flex;
-}
-
 /*****   SECTION-2   *****/
 .sec-2 {
   background-color: #2c2c6d;
+}
+
+.sec-2 .container-2 .column-2 {
+  flex-wrap: wrap;
+  position: relative;
+  flex-direction: row;
+  align-items: flex-start;
+  vertical-align: middle;
+  justify-content: space-between;
+  float: right;
+  width: 100vw;
+  height: 100vh;
+  padding: 13.3vw 5.20833vw;
+  right: 1.2vw;
+}
+
+.sec-2 .container-2 .col-2 {
+  display: block;
+  opacity: 1;
+  max-width: 400px;
+  padding: 3 0.8333vh;
 }
 
 .sec-2 .container-2 {
@@ -313,6 +328,7 @@ footer a:hover {
   overflow: hidden;
 }
 
+/*****   SECTION-3   *****/
 .container__3 {
   overflow-x: hidden;
   display: flex;
