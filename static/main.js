@@ -3,6 +3,7 @@ const menu = document.getElementById("inner");
 const hiddenDiv = document.getElementById("gnb-white");
 const titleholder = document.querySelector("title-holder");
 const column__1 = document.querySelector("column-1");
+const column__2 = document.querySelector("column-2");
 
 // const toTopEl = document.querySelector("#to-top");
 // 페이지에 스크롤 이벤트를 추가!
@@ -94,6 +95,42 @@ window.addEventListener(
         gsap.to(fadeEl, 1, {
           delay: index * 2.5,
           x: -250,
+          opacity: 1,
+        });
+      });
+      // 페이지 스크롤 위치가 500px이 넘지 않으면.
+    } else {
+    }
+  }, 80)
+);
+
+const fadeEl__4 = document.querySelectorAll(".column-2 .col-2");
+window.addEventListener(
+  "scroll",
+  _.throttle(function () {
+    if (window.scrollY > 1200) {
+      fadeEl__4.forEach(function (fadeEl, index) {
+        gsap.to(fadeEl, 1, {
+          delay: (index + 1) * 0.2,
+          y: -100,
+          opacity: 1,
+        });
+      });
+      // 페이지 스크롤 위치가 500px이 넘지 않으면.
+    } else {
+    }
+  }, 80)
+);
+
+const fadeEl__5 = document.querySelectorAll(".container-2-txt");
+window.addEventListener(
+  "scroll",
+  _.throttle(function () {
+    if (window.scrollY > 1600) {
+      fadeEl__5.forEach(function (fadeEl, index) {
+        gsap.to(fadeEl, 1, {
+          delay: index * 4.5,
+          x: 0,
           opacity: 1,
         });
       });
