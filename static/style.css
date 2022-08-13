@@ -3,7 +3,7 @@
   font-family: "Red Hat Display", sans-serif;
 }
 div {
-  animation: fadein 0.5s;
+  animation: fadein 0.1s;
 }
 
 @keyframes fadein {
@@ -345,7 +345,53 @@ footer a:hover {
 }
 
 /*****   SECTION-3   *****/
-.container__3 {
+/*****   SECTION-3   *****/
+/*****   SECTION-3   *****/
+
+.sec-3 {
+  background-color: #c8ccd0;
+}
+
+.sec-3 .container-3 .column-3 {
+  flex-wrap: wrap;
+  position: absolute;
+  flex-direction: row;
+  vertical-align: middle;
+  justify-content: space-between;
+  width: 100vw;
+  height: 100vh;
+  padding: 5.3vw 5.20833vw 13.3vw 0;
+  left: 41.33vw;
+  color: #000;
+}
+
+.sec-3 .container-3 .column-4 {
+  flex-wrap: wrap;
+  position: absolute;
+  flex-direction: row;
+  justify-content: space-between;
+  top: 50vh;
+  left: 13.3333vw;
+  color: #000;
+  background-color: #fff;
+  padding: 10px 100px;
+  border-radius: 3%;
+  text-align: center;
+}
+
+.sec-3 .container-3 .column-4 .text-mask {
+  font-size: 2.777vw;
+}
+
+.sec-3 .container-3 .column-4 .count {
+  font-size: 4vw;
+}
+
+/*****   SECTION-4   *****/
+/*****   SECTION-4   *****/
+/*****   SECTION-4   *****/
+
+.container__4 {
   overflow-x: hidden;
   display: flex;
   position: sticky;
@@ -357,7 +403,7 @@ h1 {
   padding: 0;
 }
 
-/* .container__3 .row-1-1 {
+/* .container__4 .row-1-1 {
   min-width: 80vw;
   min-height: 100vh;
   display: flex;
@@ -365,7 +411,7 @@ h1 {
   font-weight: 500;
 } */
 
-.container__3 .row-1-2 {
+.container__4 .row-1-2 {
   min-width: 50vw;
   min-height: 100vh;
   display: flex;
@@ -373,7 +419,7 @@ h1 {
   font-weight: 500;
 }
 
-.container__3 .row-1-3 {
+.container__4 .row-1-3 {
   min-width: 50vw;
   min-height: 100vh;
   display: flex;

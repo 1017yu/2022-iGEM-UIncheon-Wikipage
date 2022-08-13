@@ -4,6 +4,7 @@ const hiddenDiv = document.getElementById("gnb-white");
 const titleholder = document.querySelector("title-holder");
 const column__1 = document.querySelector("column-1");
 const column__2 = document.querySelector("column-2");
+const container__4 = document.querySelector("container__4");
 
 // const toTopEl = document.querySelector("#to-top");
 // 페이지에 스크롤 이벤트를 추가!
@@ -48,12 +49,10 @@ window.addEventListener(
 menu.addEventListener("mouseover", function onMouseOver() {
   hiddenDiv.style.height = "516px";
   hiddenDiv.style.transition = "height 0.4s ease";
-  console.log("on");
 });
 
 menu.addEventListener("mouseout", function onMouseOut() {
   hiddenDiv.style.height = "0";
-  console.log("out");
 });
 
 const fadeEl__1 = document.querySelectorAll(".title-holder .txt-mask");
@@ -160,17 +159,17 @@ const fadeEl__7 = document.querySelectorAll(".row-1-2-img");
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    if (window.scrollY > 2700) {
+    if (window.scrollY > 3000) {
       fadeEl__7.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
-          delay: index * 0.5,
+          delay: 0,
           opacity: 0,
         });
       });
-    } else if (2700 < window.scrollY < 2900) {
+    } else if (2400 < window.scrollY < 2500) {
       fadeEl__7.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
-          delay: index * 0.5,
+          delay: 0,
           opacity: 1,
         });
       });
@@ -182,18 +181,18 @@ const fadeEl__8 = document.querySelectorAll(".row-1-3-img");
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    if (window.scrollY > 3100) {
+    if (window.scrollY > 3400) {
       fadeEl__8.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
-          delay: index * 4.5,
+          delay: index * 1,
           opacity: 0,
         });
       });
       // 페이지 스크롤 위치가 500px이 넘지 않으면.
-    } else if (window.scrollY < 2900) {
+    } else if (1000 < window.scrollY < 2600) {
       fadeEl__8.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
-          delay: index * 4.5,
+          delay: index * 1,
           opacity: 1,
         });
       });
@@ -234,16 +233,11 @@ floatingObject(".sec1-bg", 1, 17);
   }
 
   function setStickyContainersSize() {
-    document
-      .querySelectorAll(".sticky-container")
-      .forEach(function (container) {
-        const stikyContainerHeight =
-          container.querySelector(".container__3").scrollWidth;
-        container.setAttribute(
-          "style",
-          "height: " + stikyContainerHeight + "px"
-        );
-      });
+    document.querySelectorAll(".stickyContainer").forEach(function (container) {
+      const stikyContainerHeight =
+        container.querySelector(".container__4").scrollWidth;
+      container.setAttribute("style", "height: " + stikyContainerHeight + "px");
+    });
   }
 
   function isElementInViewport(el) {
@@ -253,7 +247,7 @@ floatingObject(".sec1-bg", 1, 17);
 
   function wheelHandler(evt) {
     const containerInViewPort = Array.from(
-      document.querySelectorAll(".sticky-container")
+      document.querySelectorAll(".stickyContainer")
     ).filter(function (container) {
       return isElementInViewport(container);
     })[0];
@@ -271,7 +265,7 @@ floatingObject(".sec1-bg", 1, 17);
       isPlaceHolderBelowTop && isPlaceHolderBelowBottom;
 
     if (g_canScrollHorizontally) {
-      containerInViewPort.querySelector(".container__3").scrollLeft +=
+      containerInViewPort.querySelector(".container__4").scrollLeft +=
         evt.deltaY;
     }
   }
@@ -294,3 +288,31 @@ function reveal() {
 }
 
 window.addEventListener("scroll", reveal);
+
+// 카운트를 표시할 요소
+const $counter = document.querySelector(".count");
+
+// 목표수치
+const maxCount = 550;
+
+counter($counter, maxCount);
+
+function counter($counter, maxCount) {
+  let now = maxCount;
+
+  const handle = setInterval(() => {
+    $counter.innerHTML = Math.ceil(maxCount - now);
+
+    // 목표에 도달하면 정지
+    if (now < 1) {
+      clearInterval(handle);
+    }
+
+    // 적용될 수치, 점점 줄어듬
+    const step = now / 5;
+
+    now -= step;
+  }, 50);
+}
+
+const step = now / 10;
