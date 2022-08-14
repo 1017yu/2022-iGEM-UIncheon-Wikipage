@@ -159,18 +159,18 @@ const fadeEl__7 = document.querySelectorAll(".row-1-2-img");
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    if (window.scrollY > 3000) {
+    if (window.scrollY > 3300) {
       fadeEl__7.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
-          delay: 0,
-          opacity: 0,
+          delay: index * 7.5,
+          opacity: 1,
         });
       });
     } else if (2400 < window.scrollY < 2500) {
       fadeEl__7.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
           delay: 0,
-          opacity: 1,
+          opacity: 0,
         });
       });
     }
@@ -181,11 +181,11 @@ const fadeEl__8 = document.querySelectorAll(".row-1-3-img");
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    if (window.scrollY > 3400) {
+    if (window.scrollY > 3600) {
       fadeEl__8.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
-          delay: index * 1,
-          opacity: 0,
+          delay: index * 2.5,
+          opacity: 1,
         });
       });
       // 페이지 스크롤 위치가 500px이 넘지 않으면.
@@ -193,7 +193,7 @@ window.addEventListener(
       fadeEl__8.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
           delay: index * 1,
-          opacity: 1,
+          opacity: 0,
         });
       });
     }
@@ -290,18 +290,39 @@ function reveal() {
 window.addEventListener("scroll", reveal);
 
 // 카운트를 표시할 요소
-const $counter = document.querySelector(".count");
+const $counter_1 = document.querySelector(".count-1");
+const $counter_2 = document.querySelector(".count-2");
 
 // 목표수치
-const maxCount = 550;
+const maxCount_1 = 550;
+const maxCount_2 = 16000;
 
-counter($counter, maxCount);
+counter__1($counter_1, maxCount_1);
+counter__2($counter_2, maxCount_2);
 
-function counter($counter, maxCount) {
-  let now = maxCount;
+function counter__1($counter_1, maxCount_1) {
+  let now = maxCount_1;
 
-  const handle = setInterval(() => {
-    $counter.innerHTML = Math.ceil(maxCount - now);
+  let handle = setInterval(() => {
+    $counter_1.innerHTML = Math.ceil(maxCount_1 - now);
+
+    // 목표에 도달하면 정지
+    if (now < 1) {
+      clearInterval(handle);
+    }
+
+    // 적용될 수치, 점점 줄어듬
+    const step = now / 5;
+
+    now -= step;
+  }, 50);
+}
+
+function counter__2($counter_2, maxCount_2) {
+  let now = maxCount_2;
+
+  let handle = setInterval(() => {
+    $counter_2.innerHTML = Math.ceil(maxCount_2 - now);
 
     // 목표에 도달하면 정지
     if (now < 1) {
