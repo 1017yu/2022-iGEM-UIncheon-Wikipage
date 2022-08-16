@@ -4,7 +4,7 @@
 <!DOCTYPE html>
 <html lang="ko">
   <head>
-    <meta name="viewport" content="width=2100px, user-scalable=no" />
+    <meta name="viewport" content="width=2100, user-scalable=no" />
     <meta charset="UTF-8" />
     <title>ALGENE: UIncheon</title>
   </head>
@@ -139,23 +139,30 @@
     <section class="sec sec-3 content">
       <div class="containers container-3">
         <div class="column column-3">
-          <div class="text-mask">
-            <span>Look</span>
+          <div class="column-3-box">
+            <div class="text-mask">
+              <span>Look</span>
+            </div>
+            <div class="text-mask">
+              <span>More</span>
+            </div>
+            <div class="text-mask">
+              <span>Closely</span>
+            </div>
           </div>
-          <div class="text-mask">
-            <span>More</span>
-          </div>
-          <div class="text-mask">
-            <span>Closely</span>
-          </div>
-          <div class="text-mask-sub">
-            <span
-              >The amount of sludge increases year by year,<br />
-              and people are becoming more exposed to <b>Heavy Metals.</b>
-              <br />
-              The cost of consignment to the private sector<br />
-              to deal with overflowing sludge is also not negligible.</span
-            >
+          <div class="column-3-sub">
+            <div class="text-mask-sub">
+              <span>
+                The amount of sludge increases year by year,<br />
+                and people are becoming more exposed to <b>Heavy Metals.</b>
+              </span>
+            </div>
+            <div class="text-mask-sub">
+              <span>
+                The cost of consignment to the private sector<br />
+                to deal with overflowing sludge is also not negligible.</span
+              >
+            </div>
           </div>
         </div>
         <div class="column column-4">
@@ -166,9 +173,9 @@
               >(per day in Incheon)
             </span>
             <br />
-            <span class="text-mask count count-1">0</span>
-            <span class="count" style="font-size: 2.333vw">ton</span>
-            <span class="count">↑</span>
+            <span class="text-mask count countNum1" id="countNum1">0</span>
+            <span class="count-1" style="font-size: 2.333vw">ton</span>
+            <span class="count-1" style="font-size: 4vw">↑</span>
           </div>
         </div>
         <div class="column column-5">
@@ -179,15 +186,16 @@
               >($100 per ton in Korea)
             </span>
             <br />
-            <span class="text-mask count count-2">0</span>
+            <span class="text-mask count countNum2" id="countNum2">0</span>
+
             <span class="count-2" style="font-size: 2.333vw">$</span>
-            <span class="count">↑</span>
+            <span class="count-2" style="font-size: 4vw">↑</span>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="stickyContainer">
+    <section class="sec sec-4 stickyContainer">
       <div class="container__4 reveal">
         <div class="row-1 row-1-txt">
           <span> Find a solution</span>
@@ -207,6 +215,8 @@
         <div class="row-1 row-1-4"></div>
       </div>
     </section>
+
+    <section class="sec sec-5 content"></section>
 
     {% endblock %}
   </body>

@@ -5,6 +5,7 @@ const titleholder = document.querySelector("title-holder");
 const column__1 = document.querySelector("column-1");
 const column__2 = document.querySelector("column-2");
 const container__4 = document.querySelector("container__4");
+const sec__5 = document.querySelector("sec-5");
 
 // const toTopEl = document.querySelector("#to-top");
 // 페이지에 스크롤 이벤트를 추가!
@@ -103,14 +104,14 @@ window.addEventListener(
   }, 80)
 );
 
-const fadeEl__4 = document.querySelectorAll(".column-2 .col-2");
+const fadeEl__4 = document.querySelectorAll(".col-2");
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    if (window.scrollY > 1200) {
+    if (window.scrollY > 1500) {
       fadeEl__4.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
-          delay: (index + 1) * 0.2,
+          delay: (index + 1) * 0.4,
           y: -100,
           opacity: 1,
         });
@@ -125,7 +126,7 @@ const fadeEl__5 = document.querySelectorAll(".container-2-txt");
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    if (window.scrollY > 1600) {
+    if (window.scrollY > 2000) {
       fadeEl__5.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
           delay: index * 4.5,
@@ -199,6 +200,93 @@ window.addEventListener(
     }
   }, 80)
 );
+
+const fadeEl__9 = document.querySelectorAll(".count");
+window.addEventListener(
+  "scroll",
+  _.debounce(function () {
+    if (window.scrollY > 3000) {
+      fadeEl__9.forEach(function (fadeEl, index) {
+        gsap.to(fadeEl, 1, {
+          x: -100,
+          opacity: 1,
+          repeat: 0,
+        });
+      });
+      return;
+    }
+  }, 30)
+);
+
+const fadeEl__10 = document.querySelectorAll(".column-3 .text-mask");
+window.addEventListener(
+  "scroll",
+  _.throttle(function () {
+    if (window.scrollY > 2600) {
+      fadeEl__10.forEach(function (fadeEl, index) {
+        gsap.to(fadeEl, 1, {
+          delay: (index + 1) * 0.3,
+          y: -100,
+          opacity: 1,
+        });
+      });
+      // 페이지 스크롤 위치가 500px이 넘지 않으면.
+    } else {
+    }
+  }, 80)
+);
+
+// const fadeEl__12 = document.querySelectorAll(".sec-5");
+// window.addEventListener(
+//   "scroll",
+//   _.throttle(function () {
+//     if (window.visualViewport === 0) {
+//       fadeEl__12.forEach(function (fadeEl, index) {
+//         gsap.to(fadeEl, 1, {
+//           delay: (index + 1) * 0.3,
+//           x: -140,
+//           opacity: 1,
+//         });
+//       });
+//       // 페이지 스크롤 위치가 500px이 넘지 않으면.
+//     } else {
+//     }
+//   }, 80)
+// );
+
+gsap.registerPlugin(ScrollTrigger);
+
+var startCount1 = { var: 300 };
+
+gsap.to(startCount1, {
+  var: 550,
+  duration: 2,
+  ease: "none",
+  onUpdate: changeNumber1,
+  scrollTrigger: {
+    trigger: "#countNum1",
+  },
+});
+
+function changeNumber1() {
+  countNum1.innerHTML = startCount1.var.toFixed();
+}
+
+var startCount2 = { var: 10000 };
+
+gsap.to(startCount2, {
+  var: 16000,
+  duration: 2,
+  ease: "none",
+  onUpdate: changeNumber2,
+  scrollTrigger: {
+    trigger: "#countNum2",
+  },
+});
+
+function changeNumber2() {
+  countNum2.innerHTML = startCount2.var.toFixed();
+}
 
 function random(min, max) {
   return parseFloat((Math.random() * (max - min) + min).toFixed(2));
@@ -289,51 +377,22 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
-// 카운트를 표시할 요소
-const $counter_1 = document.querySelector(".count-1");
-const $counter_2 = document.querySelector(".count-2");
+console.log(window.visualViewport.pageTop);
 
-// 목표수치
-const maxCount_1 = 550;
-const maxCount_2 = 16000;
+container.onwheel = changeBgColor;
+let scrollValue = 0;
 
-counter__1($counter_1, maxCount_1);
-counter__2($counter_2, maxCount_2);
+function changeBgColor(e) {
+  scrollValue += e.deltaY * 0.01;
+  console.log(scrollValue);
 
-function counter__1($counter_1, maxCount_1) {
-  let now = maxCount_1;
-
-  let handle = setInterval(() => {
-    $counter_1.innerHTML = Math.ceil(maxCount_1 - now);
-
-    // 목표에 도달하면 정지
-    if (now < 1) {
-      clearInterval(handle);
-    }
-
-    // 적용될 수치, 점점 줄어듬
-    const step = now / 5;
-
-    now -= step;
-  }, 50);
+  if (scrollValue > 10) {
+    sec__5.style.opacity = 0.5;
+    scrollValue = 0;
+  }
+  if (scrollValue < -10) {
+    sec__5.style.opacity = 1;
+    scrollValue = 0;
+  }
+  e.preventDefault();
 }
-
-function counter__2($counter_2, maxCount_2) {
-  let now = maxCount_2;
-
-  let handle = setInterval(() => {
-    $counter_2.innerHTML = Math.ceil(maxCount_2 - now);
-
-    // 목표에 도달하면 정지
-    if (now < 1) {
-      clearInterval(handle);
-    }
-
-    // 적용될 수치, 점점 줄어듬
-    const step = now / 5;
-
-    now -= step;
-  }, 50);
-}
-
-const step = now / 10;
