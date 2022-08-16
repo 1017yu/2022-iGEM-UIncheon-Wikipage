@@ -236,6 +236,24 @@ window.addEventListener(
   }, 80)
 );
 
+const fadeEl__11 = document.querySelectorAll(".column-3-sub .text-mask-sub");
+window.addEventListener(
+  "scroll",
+  _.throttle(function () {
+    if (window.scrollY > 2600) {
+      fadeEl__11.forEach(function (fadeEl, index) {
+        gsap.to(fadeEl, 1, {
+          delay: (index + 1) * 0.3,
+          x: -130,
+          opacity: 1,
+        });
+      });
+      // 페이지 스크롤 위치가 500px이 넘지 않으면.
+    } else {
+    }
+  }, 80)
+);
+
 // const fadeEl__12 = document.querySelectorAll(".sec-5");
 // window.addEventListener(
 //   "scroll",

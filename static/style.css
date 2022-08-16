@@ -434,6 +434,10 @@ footer a:hover {
 /*****   SECTION-4   *****/
 /*****   SECTION-4   *****/
 
+.sec-4 {
+  background-color: #f4f8f8;
+}
+
 .container__4 {
   overflow-x: hidden;
   display: flex;
@@ -536,7 +540,7 @@ h1 {
 /*****   SECTION-5   *****/
 
 .sec-5 {
-  background-color: #000;
+  background-color: #c1b5a8;
   width: 100vw;
   height: 200vh;
 }
