@@ -401,8 +401,8 @@ footer a:hover {
   left: 13.3333vw;
   color: #000;
   background-color: #fff;
-  padding: 10px 100px;
-  border-radius: 3%;
+  padding: 30px 100px;
+  border-radius: 7%;
   text-align: center;
   width: 30vw;
 }
@@ -415,8 +415,8 @@ footer a:hover {
   left: 53.3333vw;
   color: #000;
   background-color: #fff;
-  padding: 10px 10px;
-  border-radius: 3%;
+  padding: 30px 10px;
+  border-radius: 7%;
   text-align: center;
   width: 30vw;
 }
@@ -540,9 +540,104 @@ h1 {
 /*****   SECTION-5   *****/
 
 .sec-5 {
-  background-color: #c1b5a8;
+  background-color: #f4f8f8;
   width: 100vw;
-  height: 200vh;
+  height: 230vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.sec-5 .container__5 {
+  display: table;
+  position: relative;
+  height: 10vh;
+  width: 100vw;
+  top: 5.333vw;
+}
+
+.sec-5 .container__5 .text-mask {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  left: 0;
+  width: 100vw;
+}
+
+.sec-5 .container__5 .text-mask > span {
+  font-size: 3.333vw;
+}
+
+.sec-5 .container__6 {
+  display: table;
+  position: relative;
+  height: 5vh;
+  width: 100vw;
+  flex-direction: column;
+  top: 3.33vw;
+}
+
+.sec-5 .container__6 .text-mask {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  left: 0;
+  width: 100vw;
+  font-weight: 100;
+}
+
+.sec-5 .container__6 .text-mask .blank {
+  display: block;
+  width: 100vw;
+  height: 2px;
+  line-height: 1.5;
+}
+
+.sec-5 .container__7 {
+  display: flex;
+  position: relative;
+}
+
+.sec-5 .container__7 .container-7-img {
+  padding: 15vw 0 0 5vw;
+
+  opacity: 0;
+}
+
+.sec-5 .container__7 .text-mask {
+  padding: 30vw 0 0 2vw;
+  max-width: 32vw;
+}
+
+.sec-5 .container__7 .text-mask > span {
+  font-size: 1.8vw;
+  line-height: normal;
+  font-style: italic;
+}
+
+.sec-5 .container__8 {
+  display: flex;
+  align-content: right;
+  position: relative;
+  margin: 200px 0 0 0;
+  overflow: hidden;
+}
+
+.sec-5 .container__8 .text-mask {
+  max-width: 600px;
+  margin: 10vw 2.333vw 0 auto;
+  text-align: right;
+}
+
+.sec-5 .container__8 .text-mask > span {
+  font-size: 1.8vw;
+  line-height: normal;
+  overflow: hidden;
+  font-style: italic;
+}
+
+.sec-5 .container__8 .container-8-img {
+  opacity: 0;
+  overflow: hidden;
 }
 
 /*****   footer   *****/
@@ -550,5 +645,4 @@ h1 {
 /*****   footer   *****/
 
 .footer {
-  margin-top: 1000px;
 }

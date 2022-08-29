@@ -24,8 +24,6 @@ window.addEventListener(
       // gsap.to(toTopEl, 0.2, {
       //   x: 0,
       // });
-
-      // 페이지 스크롤 위치가 500px이 넘지 않으면.
     } else {
       // Badge 요소 보이기!
       gsap.to(badgeEl, 0.6, {
@@ -80,7 +78,6 @@ window.addEventListener(
           opacity: 1,
         });
       });
-      // 페이지 스크롤 위치가 500px이 넘지 않으면.
     } else {
     }
   }, 80)
@@ -98,7 +95,6 @@ window.addEventListener(
           opacity: 1,
         });
       });
-      // 페이지 스크롤 위치가 500px이 넘지 않으면.
     } else {
     }
   }, 80)
@@ -116,7 +112,6 @@ window.addEventListener(
           opacity: 1,
         });
       });
-      // 페이지 스크롤 위치가 500px이 넘지 않으면.
     } else {
     }
   }, 80)
@@ -129,12 +124,11 @@ window.addEventListener(
     if (window.scrollY > 2000) {
       fadeEl__5.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
-          delay: index * 4.5,
+          delay: index * 1.5,
           x: 0,
           opacity: 1,
         });
       });
-      // 페이지 스크롤 위치가 500px이 넘지 않으면.
     } else {
     }
   }, 80)
@@ -189,7 +183,6 @@ window.addEventListener(
           opacity: 1,
         });
       });
-      // 페이지 스크롤 위치가 500px이 넘지 않으면.
     } else if (1000 < window.scrollY < 2600) {
       fadeEl__8.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
@@ -230,7 +223,6 @@ window.addEventListener(
           opacity: 1,
         });
       });
-      // 페이지 스크롤 위치가 500px이 넘지 않으면.
     } else {
     }
   }, 80)
@@ -248,7 +240,46 @@ window.addEventListener(
           opacity: 1,
         });
       });
-      // 페이지 스크롤 위치가 500px이 넘지 않으면.
+    } else {
+    }
+  }, 80)
+);
+
+const fadeEl__12 = document.querySelectorAll(".container-7-img");
+window.addEventListener(
+  "scroll",
+  _.throttle(function () {
+    if (window.scrollY > 6700) {
+      fadeEl__12.forEach((fadeEl, index) => {
+        gsap.to(fadeEl, 1, {
+          delay: (index + 1) * 1.2,
+          opacity: 1,
+          x: -200,
+          scale: 1,
+          ease: "back.out(1.9)",
+          duration: 4.5,
+        });
+      });
+    } else {
+    }
+  }, 80)
+);
+
+const fadeEl__13 = document.querySelectorAll(".container-8-img");
+window.addEventListener(
+  "scroll",
+  _.throttle(function () {
+    if (window.scrollY > 8000) {
+      fadeEl__13.forEach(function (fadeEl, index) {
+        gsap.to(fadeEl, 1, {
+          delay: (index + 1) * 0.8,
+          opacity: 1,
+          x: 130,
+          scale: 1,
+          ease: "back.out(2.7)",
+          duration: 2.5,
+        });
+      });
     } else {
     }
   }, 80)
@@ -266,8 +297,7 @@ window.addEventListener(
 //           opacity: 1,
 //         });
 //       });
-//       // 페이지 스크롤 위치가 500px이 넘지 않으면.
-//     } else {
+// //     } else {
 //     }
 //   }, 80)
 // );
@@ -395,9 +425,6 @@ function reveal() {
 
 window.addEventListener("scroll", reveal);
 
-console.log(window.visualViewport.pageTop);
-
-container.onwheel = changeBgColor;
 let scrollValue = 0;
 
 function changeBgColor(e) {
