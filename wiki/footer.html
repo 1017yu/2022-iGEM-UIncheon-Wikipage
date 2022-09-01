@@ -1,25 +1,170 @@
-<footer class="pt-5 pb-5 footer py-5 mt-5 bg-dark text-white">
+<footer class="pt-5 pb-5 footer mt-5 bg-dark text-white">
   <div class="container">
     <div class="row mb-4">
-      <div class="col-lg-6 col-xs-12">
-        <h4 class="mb-3">Heading</h4>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac
-          ante mollis quam tristique convallis
-        </p>
-      </div>
-      <div class="col-lg-3 col-xs-12">
-        <h4 class="mt-lg-0 mt-sm-4 mb-3">Contact Us</h4>
-        <p>119 Academy-ro, Yeonsu-gu, Incheon 22012, South Korea</p>
-        <a class="insta-link" href="https://instagram.com/igem_uincheon/"
-          ><img
-            width="30px"
-            src="https://static.igem.wiki/teams/4310/wiki/instagram.png"
-        /></a>
-        <p class="mb-0">igemincheon@gmail.com</p>
-        <p></p>
-      </div>
-    </div>
+      <ul class="footer_main_menu">
+      <!---- HOME ---->
+      <li class="footer_menu menu-home">
+        <a class="item__name" id="item__name" href="{{ url_for('index') }}">Home </a>
+      </li>
+
+      <!---- TEAM ---->
+      <li class="footer_menu has-sub-menu">
+        <a class="item__name" id="item__name" href="{{ url_for('pages', page='team') }}"">Team</a>
+        <div class="footer_content">
+          <ul class="footer_sub_menu">
+        
+            <li>
+              <a href="{{ url_for('pages', page='attributions') }}"
+                >Attributions</a
+              >
+            </li>
+            <li>
+              <a href="{{ url_for('pages', page='collaborations') }}"
+                >Collaborations</a
+              >
+            </li>
+          </ul>
+        </div>
+      </li>
+      
+      <!---- PROJECT ---->
+      <li class="footer_menu has-sub-menu">
+        <a class="item__name" id="item__name" href="#" aria-expanded="false"> Project </a>
+        <div class="footer_content">
+          <ul class="footer_sub_menu">
+            <li>
+              <a href="{{ url_for('pages', page='communication') }}"
+                >Communication</a
+              >
+            </li>
+            <li>
+              <a href="{{ url_for('pages', page='contribution') }}"
+                >Contribution</a
+              >
+            </li>
+            <li>
+              <a href="{{ url_for('pages', page='description') }}"
+                >Description</a
+              >
+            </li>
+            <li>
+              <a href="{{ url_for('pages', page='engineering') }}"
+                >Engineering</a
+              >
+            </li>
+            <li>
+              <a href="{{ url_for('pages', page='experiments') }}"
+                >Experiments</a
+              >
+            </li>
+            <li>
+              <a href="{{ url_for('pages', page='implementation') }}"
+                >Implementation</a
+              >
+            </li>
+            <li>
+              <a href="{{ url_for('pages', page='notebook') }}">Notebook</a>
+            </li>
+            <li>
+              <a href="{{ url_for('pages', page='partnership') }}"
+                >Partnership</a
+              >
+            </li>
+            <li>
+              <a href="{{ url_for('pages', page='proof-of-concept') }}"
+                >Concept</a
+              >
+            </li>
+            <li>
+              <a href="{{ url_for('pages', page='results') }}">Results</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <!---- PARTS ---->
+      <li class="footer_menu has-sub-menu">
+        <a class="item__name" id="item__name" href="#" aria-expanded="false"> Parts </a>
+        <div class="footer_content">
+          <ul class="footer_sub_menu">
+            <li>
+              <a href="{{ url_for('pages', page='part-collection') }}"
+                >Part Collection</a
+              >
+            </li>
+            <li>
+              <a href="{{ url_for('pages', page='parts') }}">Parts</a>
+            </li>
+            <li>
+              <a href="{{ url_for('pages', page='improve') }}">Improve</a>
+            </li>
+          </ul>
+        </div>
+      </li>
+
+      <!---- SAFETY ---->
+      <li class="footer_menu has-sub-menu">
+        <a class="item__name" id="item__name" href="{{ url_for('pages', page='safety') }}">
+          Safety
+        </a>
+      </li>
+
+      <!---- HUMAN PRACTICES ---->
+      <li class="footer_menu has-sub-menu">
+        <a
+          class="item__name"
+          id="item__name"
+          href="{{ url_for('pages', page='human-practices') }}"
+        >
+          Human Practices
+        </a>
+      </li>
+
+      <!---- AWARDS ---->
+      <li class="footer_menu has-sub-menu">
+        <a class="item__name" id="item__name" href="#" aria-expanded="false"> Awards </a>
+        <div class="footer_content">
+          <ul class="footer_sub_menu">
+            <li>
+              <a href="{{ url_for('pages', page='education') }}">Education</a>
+            </li>
+            <li>
+              <a href="{{ url_for('pages', page='entrepreneurship') }}"
+                >Entrepreneurship</a
+              >
+            </li>
+            <li>
+              <a href="{{ url_for('pages', page='hardware') }}">Hardware</a>
+            </li>
+            <li>
+              <a href="{{ url_for('pages', page='inclusivity') }}"
+                >Inclusivity</a
+              >
+            </li>
+            <li>
+              <a href="{{ url_for('pages', page='measurement') }}"
+                >Measurement</a
+              >
+            </li>
+            <li>
+              <a href="{{ url_for('pages', page='model') }}">Model</a>
+            </li>
+            <li>
+              <a href="{{ url_for('pages', page='plant') }}">Plant</a>
+            </li>
+            <li>
+              <a href="{{ url_for('pages', page='software') }}">Software</a>
+            </li>
+            <li>
+              <a href="{{ url_for('pages', page='sustainable') }}"
+                >Sustainable</a
+              >
+            </li>
+          </ul>
+        </div>
+      </li>
+    </ul>
+      
     <hr />
     <!-- The following MUST be on every page: license information and link to the repository on gitlab.igem.org -->
     <div class="row mt-4">
@@ -42,6 +187,23 @@
               >gitlab.igem.org/2022/uincheon</a
             >.</small
           >
+          <div class="foot_contact col-xs-12">
+        <h4 class="foot_contactUs">Contact Us</h4>
+        <p>119 Academy-ro, Yeonsu-gu, Incheon 22012, South Korea</p>
+        <p class="foot_contact_mail">igemincheon@gmail.com</p>
+        <a class="material_icon insta_link" href="https://instagram.com/igem_uincheon/" target="_blank"
+          ><img
+            width="30px"
+            src="https://static.igem.wiki/teams/4310/wiki/instagram.png"
+        /></a>
+        <a class="material_icon gitlab_link" href="https://gitlab.igem.org/2022/uincheon" target="_blank">
+          <img 
+          width="30px" 
+          src="https://static.igem.wiki/teams/4310/wiki/gitlab.png"
+          />
+        </a>
+        <p></p>
+      </div>
         </p>
       </div>
     </div>

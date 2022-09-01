@@ -6436,9 +6436,6 @@ fieldset:disabled .btn {
 .me-auto {
   margin-right: auto !important;
 }
-.mb-0 {
-  margin-bottom: 0 !important;
-}
 .mb-1 {
   margin-bottom: 0.25rem !important;
 }
@@ -6448,9 +6445,7 @@ fieldset:disabled .btn {
 .mb-3 {
   margin-bottom: 1rem !important;
 }
-.mb-4 {
-  margin-bottom: 1.5rem !important;
-}
+
 .mb-5 {
   margin-bottom: 3rem !important;
 }
@@ -6540,10 +6535,7 @@ fieldset:disabled .btn {
   padding-top: 1.5rem !important;
   padding-bottom: 1.5rem !important;
 }
-.py-5 {
-  padding-top: 3rem !important;
-  padding-bottom: 3rem !important;
-}
+
 .pt-0 {
   padding-top: 0 !important;
 }

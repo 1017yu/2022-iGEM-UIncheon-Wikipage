@@ -154,20 +154,14 @@ const fadeEl__7 = document.querySelectorAll(".row-1-2-img");
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    if (window.scrollY > 3300) {
+    if (window.scrollY > 4300) {
       fadeEl__7.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
           delay: index * 7.5,
-          opacity: 1,
+          display: "block",
         });
       });
-    } else if (2400 < window.scrollY < 2500) {
-      fadeEl__7.forEach(function (fadeEl, index) {
-        gsap.to(fadeEl, 1, {
-          delay: 0,
-          opacity: 0,
-        });
-      });
+    } else {
     }
   }, 80)
 );
@@ -176,20 +170,14 @@ const fadeEl__8 = document.querySelectorAll(".row-1-3-img");
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    if (window.scrollY > 3600) {
+    if (window.scrollY > 4300) {
       fadeEl__8.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
-          delay: index * 2.5,
-          opacity: 1,
+          delay: index * 7.5,
+          display: "block",
         });
       });
-    } else if (1000 < window.scrollY < 2600) {
-      fadeEl__8.forEach(function (fadeEl, index) {
-        gsap.to(fadeEl, 1, {
-          delay: index * 1,
-          opacity: 0,
-        });
-      });
+    } else {
     }
   }, 80)
 );
@@ -355,89 +343,89 @@ function floatingObject(selector, delay, size) {
 }
 floatingObject(".sec1-bg", 1, 17);
 
-(function () {
-  init();
+// (function () {
+//   init();
 
-  let g_containerInViewport;
-  function init() {
-    setStickyContainersSize();
-    bindEvents();
-  }
+//   let g_containerInViewport;
+//   function init() {
+//     setStickyContainersSize();
+//     bindEvents();
+//   }
 
-  function bindEvents() {
-    window.addEventListener("wheel", wheelHandler);
-  }
+//   function bindEvents() {
+//     window.addEventListener("wheel", wheelHandler);
+//   }
 
-  function setStickyContainersSize() {
-    document.querySelectorAll(".stickyContainer").forEach(function (container) {
-      const stikyContainerHeight =
-        container.querySelector(".container__4").scrollWidth;
-      container.setAttribute("style", "height: " + stikyContainerHeight + "px");
-    });
-  }
+//   function setStickyContainersSize() {
+//     document.querySelectorAll(".stickyContainer").forEach(function (container) {
+//       const stikyContainerHeight =
+//         container.querySelector(".container__4").scrollWidth;
+//       container.setAttribute("style", "height: " + stikyContainerHeight + "px");
+//     });
+//   }
 
-  function isElementInViewport(el) {
-    const rect = el.getBoundingClientRect();
-    return rect.top <= 0 && rect.bottom > document.documentElement.clientHeight;
-  }
+//   function isElementInViewport(el) {
+//     const rect = el.getBoundingClientRect();
+//     return rect.top <= 0 && rect.bottom > document.documentElement.clientHeight;
+//   }
 
-  function wheelHandler(evt) {
-    const containerInViewPort = Array.from(
-      document.querySelectorAll(".stickyContainer")
-    ).filter(function (container) {
-      return isElementInViewport(container);
-    })[0];
+//   function wheelHandler(evt) {
+//     const containerInViewPort = Array.from(
+//       document.querySelectorAll(".stickyContainer")
+//     ).filter(function (container) {
+//       return isElementInViewport(container);
+//     })[0];
 
-    if (!containerInViewPort) {
-      return;
-    }
+//     if (!containerInViewPort) {
+//       return;
+//     }
 
-    let isPlaceHolderBelowTop =
-      containerInViewPort.offsetTop < document.documentElement.scrollTop;
-    let isPlaceHolderBelowBottom =
-      containerInViewPort.offsetTop + containerInViewPort.offsetHeight >
-      document.documentElement.scrollTop;
-    let g_canScrollHorizontally =
-      isPlaceHolderBelowTop && isPlaceHolderBelowBottom;
+//     let isPlaceHolderBelowTop =
+//       containerInViewPort.offsetTop < document.documentElement.scrollTop;
+//     let isPlaceHolderBelowBottom =
+//       containerInViewPort.offsetTop + containerInViewPort.offsetHeight >
+//       document.documentElement.scrollTop;
+//     let g_canScrollHorizontally =
+//       isPlaceHolderBelowTop && isPlaceHolderBelowBottom;
 
-    if (g_canScrollHorizontally) {
-      containerInViewPort.querySelector(".container__4").scrollLeft +=
-        evt.deltaY;
-    }
-  }
-})();
+//     if (g_canScrollHorizontally) {
+//       containerInViewPort.querySelector(".container__4").scrollLeft +=
+//         evt.deltaY;
+//     }
+//   }
+// })();
 
-function reveal() {
-  var reveals = document.querySelectorAll(".reveal");
+// function reveal() {
+//   var reveals = document.querySelectorAll(".reveal");
 
-  for (var i = 0; i < reveals.length; i++) {
-    var windowHeight = window.innerWidth;
-    var elementTop = reveals[i].getBoundingClientRect().top;
-    var elementVisible = 150;
+//   for (var i = 0; i < reveals.length; i++) {
+//     var windowHeight = window.innerWidth;
+//     var elementTop = reveals[i].getBoundingClientRect().top;
+//     var elementVisible = 150;
 
-    if (elementTop < windowHeight - elementVisible) {
-      reveals[i].classList.add("active");
-    } else {
-      reveals[i].classList.remove("active");
-    }
-  }
-}
+//     if (elementTop < windowHeight - elementVisible) {
+//       reveals[i].classList.add("active");
+//     } else {
+//       reveals[i].classList.remove("active");
+//     }
+//   }
+// }
 
-window.addEventListener("scroll", reveal);
+// window.addEventListener("scroll", reveal);
 
-let scrollValue = 0;
+// let scrollValue = 0;
 
-function changeBgColor(e) {
-  scrollValue += e.deltaY * 0.01;
-  console.log(scrollValue);
+// function changeBgColor(e) {
+//   scrollValue += e.deltaY * 0.01;
+//   console.log(scrollValue);
 
-  if (scrollValue > 10) {
-    sec__5.style.opacity = 0.5;
-    scrollValue = 0;
-  }
-  if (scrollValue < -10) {
-    sec__5.style.opacity = 1;
-    scrollValue = 0;
-  }
-  e.preventDefault();
-}
+//   if (scrollValue > 10) {
+//     sec__5.style.opacity = 0.5;
+//     scrollValue = 0;
+//   }
+//   if (scrollValue < -10) {
+//     sec__5.style.opacity = 1;
+//     scrollValue = 0;
+//   }
+//   e.preventDefault();
+// }

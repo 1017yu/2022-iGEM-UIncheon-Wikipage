@@ -116,9 +116,6 @@ footer a:hover {
   text-align: left;
 }
 
-.menu .item__content {
-}
-
 .menu .menu-item .item__name {
   padding: 10px 70px 32px 0px;
   font-size: 16px;
@@ -486,10 +483,8 @@ h1 {
   position: sticky;
   display: inline;
   min-width: 30vw;
-  min-height: 10px;
-  top: 50px;
-  left: 3vw;
-  margin: 7.3333vw 3.33vw;
+  max-height: 10px;
+  margin: 6.3333vw 36.33vw;
   z-index: 11;
   font-size: 4.2vw;
   overflow: visible;
@@ -503,19 +498,21 @@ h1 {
 }
 
 .row-1-2-img {
-  width: 70%;
-  height: 70%;
-  margin: auto;
+  height: 50%;
+  margin: 12.333vw auto auto 5vw;
   padding: auto;
-  opacity: 0;
+  opacity: 0.233;
+  position: absolute;
+  display: none;
 }
 
 .row-1-3-img {
-  width: 70%;
-  height: 70%;
-  margin: auto;
+  height: 50%;
+  margin: 12.333vw auto auto 6.333vw;
   padding: auto;
-  opacity: 0;
+  opacity: 0.233;
+  position: absolute;
+  display: none;
 }
 
 .row-1-1 > span {
@@ -525,14 +522,30 @@ h1 {
 
 .row-1-2 > img {
   top: 5.33vw;
-  left: 100vw;
+  left: 10vw;
   border-radius: 10%;
+  transition: transform 0.15s linear;
 }
 
 .row-1-3 > img {
   top: 5.33vw;
-  left: 100vw;
+  left: 50vw;
   border-radius: 10%;
+  transition: transform 0.15s linear;
+}
+
+.row-1-2-img:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  transition: opacity 0.7s linear;
+  transition: transform 0.2s linear;
+}
+
+.row-1-3-img:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  transition: opacity 0.7s linear;
+  transition: transform 0.2s linear;
 }
 
 /*****   SECTION-5   *****/
@@ -645,4 +658,60 @@ h1 {
 /*****   footer   *****/
 
 .footer {
+  padding-top: 3rem !important;
+  padding-bottom: 0.6667rem !important;
+}
+
+.footer_main_menu {
+  right: 200px;
+  display: -webkit-flex;
+  display: flex;
+  margin-bottom: 9vw;
+}
+
+.footer_menu {
+  margin: 0 1.333vw;
+  text-align: center;
+}
+
+.footer_content {
+  min-width: 7.333vw;
+}
+
+.footer_content .footer_sub_menu {
+  text-align: left;
+  text-decoration: none;
+  padding-inline-start: 1rem;
+  font-size: 14px;
+  padding: 25px 0 0 0;
+  text-align: center;
+}
+
+.footer_content .footer_sub_menu > li {
+  margin-top: 1vw;
+}
+
+.mb-4 {
+  position: relative;
+  margin-bottom: 10vw;
+}
+
+.foot_contact {
+  margin-left: 44vw;
+  position: relative;
+  margin-top: -4vw;
+}
+
+.foot_contactUs {
+  font-size: 1.444vw;
+  font-weight: 400;
+}
+
+.foot_contact_mail {
+  margin-top: 0.5vw;
+  font-size: 1rem;
+}
+
+.material_icon {
+  margin-right: 0.5vw;
 }
