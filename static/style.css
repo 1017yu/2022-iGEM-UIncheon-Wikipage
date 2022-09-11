@@ -21,6 +21,13 @@ body {
   height: 100%;
 }
 
+#loading-image {
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  z-index: 100;
+}
+
 .content {
   width: 100vw;
   height: 100vh;

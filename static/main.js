@@ -237,7 +237,7 @@ const fadeEl__12 = document.querySelectorAll(".container-7-img");
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    if (window.scrollY > 6700) {
+    if (window.scrollY > 5300) {
       fadeEl__12.forEach((fadeEl, index) => {
         gsap.to(fadeEl, 1, {
           delay: (index + 1) * 1.2,
@@ -257,7 +257,7 @@ const fadeEl__13 = document.querySelectorAll(".container-8-img");
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    if (window.scrollY > 8000) {
+    if (window.scrollY > 6600) {
       fadeEl__13.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
           delay: (index + 1) * 0.8,
@@ -429,3 +429,7 @@ floatingObject(".sec1-bg", 1, 17);
 //   }
 //   e.preventDefault();
 // }
+
+window.onload = function () {
+  $("#loading-image").hide();
+};
