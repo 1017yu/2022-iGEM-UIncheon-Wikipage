@@ -660,6 +660,18 @@ h1 {
   overflow: hidden;
 }
 
+/*****   Team   *****/
+/*****   Team   *****/
+/*****   Team   *****/
+
+.team_sec1 {
+  margin-top: 20vw;
+}
+
+.team_sec1 .team_col > h1 {
+  text-align: center;
+}
+
 /*****   footer   *****/
 /*****   footer   *****/
 /*****   footer   *****/
