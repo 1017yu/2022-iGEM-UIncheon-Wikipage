@@ -668,8 +668,53 @@ h1 {
   margin-top: 20vw;
 }
 
-.team_sec1 .team_col > h1 {
+.team_sec1 .team_col0 > h1 {
   text-align: center;
+}
+
+.team_sec2 {
+  width: 100vw;
+  height: 910vh;
+  background-color: #c8ccd0;
+}
+
+.team_col {
+  width: 100vw;
+  height: 70vh;
+  display: flex;
+}
+
+.team_col1 {
+  margin: auto 5vw;
+  padding-top: 30px;
+}
+
+.team_col .members_photo {
+  display: flex;
+}
+
+.team_col .members_intro {
+  margin-left: 3vw;
+}
+
+.team_col .members_att {
+  display: flex;
+  flex-direction: column;
+  height: 20vh;
+  width: 50vw;
+  font-size: 30px;
+  vertical-align: center;
+}
+.team_col .members_dep {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  font-size: 40px;
+  padding-top: 3vw;
+}
+
+.team-yht-img {
+  position: inherit;
 }
 
 /*****   footer   *****/
