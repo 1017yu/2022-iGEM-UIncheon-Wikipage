@@ -91,6 +91,11 @@
               >
             </li>
             <li>
+              <a href="{{ url_for('pages', page='safety') }}"
+                >Safety</a
+              >
+            </li> 
+            <li>
               <a href="{{ url_for('pages', page='results') }}">Results</a>
             </li>
           </ul>
@@ -108,21 +113,18 @@
               >
             </li>
             <li>
-              <a href="{{ url_for('pages', page='parts') }}">Parts</a>
-            </li>
-            <li>
-              <a href="{{ url_for('pages', page='improve') }}">Improve</a>
+              <a href="{{ url_for('pages', page='parts') }}">Parts Overview</a>
             </li>
           </ul>
         </div>
       </li>
 
       <!---- SAFETY ---->
-      <li class="menu-item has-sub-menu">
+      <!-- <li class="menu-item has-sub-menu">
         <a class="item__name" id="item__name" href="{{ url_for('pages', page='safety') }}">
           Safety
         </a>
-      </li>
+      </li> -->
 
       <!---- HUMAN PRACTICES ---->
       <li class="menu-item has-sub-menu">
@@ -136,7 +138,7 @@
       </li>
 
       <!---- AWARDS ---->
-      <li class="menu-item has-sub-menu">
+      <!-- <li class="menu-item has-sub-menu">
         <a class="item__name" id="item__name" href="#" aria-expanded="false"> Awards </a>
         <div class="item__contents">
           <ul class="sub-menu">
@@ -177,7 +179,7 @@
             </li>
           </ul>
         </div>
-      </li>
+      </li> -->
     </ul>
   </div>
   </div>
