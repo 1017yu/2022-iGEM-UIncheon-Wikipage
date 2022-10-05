@@ -28,6 +28,21 @@ body {
   z-index: 100;
 }
 
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+.top-btn {
+  all: unset;
+  position: fixed;
+  right: 120px;
+  bottom: 120px;
+  cursor: pointer;
+  transform: scale(1.8);
+  opacity: 0;
+  transition: 0.3s;
+}
+
 .content {
   width: 100vw;
   height: 100vh;
