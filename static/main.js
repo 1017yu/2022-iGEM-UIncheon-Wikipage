@@ -280,6 +280,26 @@ window.addEventListener(
   }, 80)
 );
 
+const fadeEl__14 = document.querySelectorAll(".column-7 .text-mask");
+const rect_14 = document.getElementById("col-7");
+
+window.addEventListener(
+  "scroll",
+  _.throttle(function () {
+    if (rect_14.getBoundingClientRect().y < 850) {
+      fadeEl__14.forEach(function (fadeEl, index) {
+        gsap.to(fadeEl, 1, {
+          delay: (index + 1) * 0.3,
+          x: -100,
+          y: -100,
+          opacity: 1,
+        });
+      });
+    } else {
+    }
+  }, 80)
+);
+
 // const fadeEl__12 = document.querySelectorAll(".sec-5");
 // window.addEventListener(
 //   "scroll",

@@ -68,7 +68,7 @@ footer a:hover {
   position: fixed;
   width: 100vw;
   top: 0px;
-  backdrop-filter: blur(60px);
+  backdrop-filter: blur(6 0px);
   background-color: transparent;
 }
 
@@ -449,6 +449,19 @@ footer a:hover {
   top: 0;
 }
 
+.container__4 .column-7 {
+  position: absolute;
+  width: 100vw;
+  margin-top: 100px;
+  padding: 5.3vw 5.20833vw 0 0;
+  left: 14.33vw;
+  line-height: 3.8333vw;
+}
+
+.container__4 .column-7 .text-mask {
+  opacity: 0;
+}
+
 h1 {
   margin: 0;
   padding: 0;
@@ -484,24 +497,6 @@ h1 {
   display: flex;
   font-size: 3vw;
   font-weight: 500;
-}
-
-.row-1-txt {
-  position: sticky;
-  display: inline;
-  min-width: 30vw;
-  max-height: 10px;
-  margin: 6.3333vw 36.33vw;
-  z-index: 11;
-  font-size: 4.2vw;
-  overflow: visible;
-  font-weight: 400;
-}
-
-.row-1-txt > span {
-  display: inline-block;
-  backdrop-filter: blur(10px);
-  background-color: transparent;
 }
 
 .row-1-2-img {
