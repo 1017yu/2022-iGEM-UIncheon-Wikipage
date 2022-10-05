@@ -7,6 +7,9 @@ const column__2 = document.querySelector("column-2");
 const container__4 = document.querySelector("container__4");
 const sec__5 = document.querySelector("sec-5");
 
+gsap.config({
+  nullTargetWarn: false,
+});
 // const toTopEl = document.querySelector("#to-top");
 // 페이지에 스크롤 이벤트를 추가!
 // 스크롤이 지나치게 자주 발생하는 것을 조절(throttle, 일부러 부하를 줌)
@@ -101,10 +104,11 @@ window.addEventListener(
 );
 
 const fadeEl__4 = document.querySelectorAll(".col-2");
+const rect_4 = document.getElementById("col-2");
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    if (window.scrollY > 1500) {
+    if (rect_4.getBoundingClientRect().y < 850) {
       fadeEl__4.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
           delay: (index + 1) * 0.4,
@@ -134,21 +138,21 @@ window.addEventListener(
   }, 80)
 );
 
-const fadeEl__6 = document.querySelectorAll(".row-1-1");
-window.addEventListener(
-  "scroll",
-  _.throttle(function () {
-    if (window.scrollY > 2300) {
-      fadeEl__6.forEach(function (fadeEl, index) {
-        gsap.to(fadeEl, 1, {
-          delay: index * 4.5,
-          opacity: 1,
-        });
-      });
-    } else {
-    }
-  }, 80)
-);
+// const fadeEl__6 = document.querySelectorAll(".row-1-1");
+// window.addEventListener(
+//   "scroll",
+//   _.throttle(function () {
+//     if (window.scrollY > 2300) {
+//       fadeEl__6.forEach(function (fadeEl, index) {
+//         gsap.to(fadeEl, 1, {
+//           delay: index * 4.5,
+//           opacity: 1,
+//         });
+//       });
+//     } else {
+//     }
+//   }, 80)
+// );
 
 const fadeEl__7 = document.querySelectorAll(".row-1-2-img");
 window.addEventListener(
@@ -186,7 +190,7 @@ const fadeEl__9 = document.querySelectorAll(".count");
 window.addEventListener(
   "scroll",
   _.debounce(function () {
-    if (window.scrollY > 3000) {
+    if (rect_10.getBoundingClientRect().y < 650) {
       fadeEl__9.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
           x: -100,
@@ -200,10 +204,12 @@ window.addEventListener(
 );
 
 const fadeEl__10 = document.querySelectorAll(".column-3 .text-mask");
+const rect_10 = document.getElementById("col-3-txt");
+
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    if (window.scrollY > 2600) {
+    if (rect_10.getBoundingClientRect().y < 850) {
       fadeEl__10.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
           delay: (index + 1) * 0.3,
@@ -217,10 +223,11 @@ window.addEventListener(
 );
 
 const fadeEl__11 = document.querySelectorAll(".column-3-sub .text-mask-sub");
+
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    if (window.scrollY > 2600) {
+    if (rect_10.getBoundingClientRect().y < 850) {
       fadeEl__11.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
           delay: (index + 1) * 0.3,
@@ -429,7 +436,3 @@ floatingObject(".sec1-bg", 1, 17);
 //   }
 //   e.preventDefault();
 // }
-
-window.onload = function () {
-  $("#loading-image").hide();
-};

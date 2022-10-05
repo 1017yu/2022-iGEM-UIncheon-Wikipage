@@ -68,7 +68,7 @@ footer a:hover {
   position: fixed;
   width: 100vw;
   top: 0px;
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(60px);
   background-color: transparent;
 }
 
@@ -224,7 +224,7 @@ footer a:hover {
   top: 380px;
   right: 300px;
   line-height: normal;
-  font-size: 58px;
+  font-size: 48px;
   color: #fff;
   font-weight: 600;
   font-style: italic;
@@ -239,7 +239,7 @@ footer a:hover {
 
 .sec-1 {
   padding: 0;
-  background-color: #c3dadd;
+  background-color: #f4f8f8;
   /* height: 1054px; */
   vertical-align: middle;
   height: 100vh;
