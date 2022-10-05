@@ -4,7 +4,7 @@ const hiddenDiv = document.getElementById("gnb-white");
 const titleholder = document.querySelector("title-holder");
 const column__1 = document.querySelector("column-1");
 const column__2 = document.querySelector("column-2");
-const container__4 = document.querySelector("container__4");
+const container__4 = document.querySelector("container-4");
 const sec__5 = document.querySelector("sec-5");
 
 gsap.config({
@@ -154,31 +154,18 @@ window.addEventListener(
 //   }, 80)
 // );
 
-const fadeEl__7 = document.querySelectorAll(".row-1-2-img");
-window.addEventListener(
-  "scroll",
-  _.throttle(function () {
-    if (window.scrollY > 4300) {
-      fadeEl__7.forEach(function (fadeEl, index) {
-        gsap.to(fadeEl, 1, {
-          delay: index * 7.5,
-          display: "block",
-        });
-      });
-    } else {
-    }
-  }, 80)
-);
+const fadeEl__6 = document.querySelectorAll(".row-1-sub .text-mask-sub");
+const rect_6 = document.getElementById("row-1-sub");
 
-const fadeEl__8 = document.querySelectorAll(".row-1-3-img");
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    if (window.scrollY > 4300) {
-      fadeEl__8.forEach(function (fadeEl, index) {
+    if (rect_6.getBoundingClientRect().y < 850) {
+      fadeEl__6.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
-          delay: index * 7.5,
-          display: "block",
+          delay: (index + 1) * 0.3,
+          y: -100,
+          opacity: 1,
         });
       });
     } else {
@@ -241,10 +228,12 @@ window.addEventListener(
 );
 
 const fadeEl__12 = document.querySelectorAll(".container-7-img");
+const rect_12 = document.getElementById("container-7");
+
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    if (window.scrollY > 5300) {
+    if (rect_12.getBoundingClientRect().y < 850) {
       fadeEl__12.forEach((fadeEl, index) => {
         gsap.to(fadeEl, 1, {
           delay: (index + 1) * 1.2,
@@ -261,10 +250,12 @@ window.addEventListener(
 );
 
 const fadeEl__13 = document.querySelectorAll(".container-8-img");
+const rect_13 = document.getElementById("container-8");
+
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    if (window.scrollY > 6600) {
+    if (rect_13.getBoundingClientRect().y < 800) {
       fadeEl__13.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
           delay: (index + 1) * 0.8,
@@ -280,8 +271,8 @@ window.addEventListener(
   }, 80)
 );
 
-const fadeEl__14 = document.querySelectorAll(".column-7 .text-mask");
-const rect_14 = document.getElementById("col-7");
+const fadeEl__14 = document.querySelectorAll(".row-1 .text-mask");
+const rect_14 = document.getElementById("row-1");
 
 window.addEventListener(
   "scroll",
