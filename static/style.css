@@ -742,6 +742,10 @@ footer a:hover {
   text-align: center;
 }
 
+.sec-att .att-mask > span {
+  font-size: 1.533vw;
+}
+
 .sec-att .att-container {
   text-align: center;
   display: inline-block;
@@ -770,17 +774,84 @@ footer a:hover {
   margin-top: 20vh;
 }
 
-.sec-att .att-container .att-intr {
+.sec-att .att-container .intr {
   max-width: 50vw;
   margin: auto;
   font-size: 1.73vw;
 }
 
-.sec-att .att-container .text-mask-3 .text-mask-3-img {
+.intr {
+  width: 60vw;
+  margin: auto;
+  font-size: 1.73vw;
 }
 
-.sec-att .att-mask > span {
+/*****   collabroations   *****/
+/*****   collabroations   *****/
+/*****   collabroations   *****/
+
+.sec-collabo {
+  display: flex;
+  width: 100vw;
+  height: 440vh;
+  background-color: #c8ccd0;
+  margin-top: 7.33vw;
+  align-items: center;
+  flex-direction: column;
+}
+
+.sec-collabo .text-mask-img {
+  padding: 3vh 0 6vh;
+}
+.sec-collabo .collabo-mask > span {
   font-size: 1.533vw;
+}
+
+.sec-collabo .collabo-container-1 {
+  text-align: center;
+  display: inline-block;
+  padding: 0 100px;
+  background-color: #f4f8f8;
+  width: 80vw;
+  margin-top: 3.3333vw;
+  text-align: left;
+}
+
+.sec-collabo .collabo-container-1 .intr {
+  text-align: left;
+  margin: 0;
+}
+
+.sec-collabo .collabo-container-1 .text-mask-1 {
+  margin-top: 7.33vw;
+  text-align: left;
+}
+
+.sec-collabo .collabo-container-1 .text-mask-1 > span {
+  font-size: 3.33vw;
+  font-weight: 500;
+}
+
+.sec-collabo .collabo-container-1 .text-mask-2 {
+  margin-top: 1.33vw;
+  text-align: left;
+}
+
+.sec-collabo .collabo-container {
+  text-align: center;
+  display: inline-block;
+  padding: 0 100px;
+  background-color: #f4f8f8;
+  width: 80vw;
+}
+
+.sec-collabo .collabo-mask {
+  padding-top: 20vh;
+}
+
+.sec-collabo .collabo-mask > span {
+  font-size: 2.33vw;
+  font-weight: 500;
 }
 
 /*****   footer   *****/
