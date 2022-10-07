@@ -477,3 +477,6 @@ window.onscroll = () =>
 //   }
 //   e.preventDefault();
 // }
+
+$("#loading").show();
+$("#loading2").addClass("spinner2");
