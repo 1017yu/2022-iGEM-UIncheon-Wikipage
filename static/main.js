@@ -121,15 +121,16 @@ window.addEventListener(
   }, 80)
 );
 
-const fadeEl__5 = document.querySelectorAll(".container-2-txt");
+const fadeEl__5 = document.querySelectorAll(".sec-2-column2-img");
+const rect_5 = document.getElementById("sec-2-img");
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    if (window.scrollY > 2000) {
+    if (rect_5.getBoundingClientRect().y < 750) {
       fadeEl__5.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
           delay: index * 1.5,
-          x: 0,
+          x: 70,
           opacity: 1,
         });
       });
@@ -360,6 +361,7 @@ function floatingObject(selector, delay, size) {
   );
 }
 floatingObject(".sec1-bg", 1, 17);
+floatingObject(".sec-2-column2-img", 1, 17);
 
 // Get the button:
 let mybutton = document.getElementById("myBtn");
