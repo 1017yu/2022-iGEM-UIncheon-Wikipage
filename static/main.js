@@ -139,22 +139,6 @@ window.addEventListener(
   }, 80)
 );
 
-// const fadeEl__6 = document.querySelectorAll(".row-1-1");
-// window.addEventListener(
-//   "scroll",
-//   _.throttle(function () {
-//     if (window.scrollY > 2300) {
-//       fadeEl__6.forEach(function (fadeEl, index) {
-//         gsap.to(fadeEl, 1, {
-//           delay: index * 4.5,
-//           opacity: 1,
-//         });
-//       });
-//     } else {
-//     }
-//   }, 80)
-// );
-
 const fadeEl__6 = document.querySelectorAll(".row-1-sub .text-mask-sub");
 const rect_6 = document.getElementById("row-1-sub");
 
@@ -283,6 +267,25 @@ window.addEventListener(
         gsap.to(fadeEl, 1, {
           delay: (index + 1) * 0.3,
           x: -100,
+          y: -100,
+          opacity: 1,
+        });
+      });
+    } else {
+    }
+  }, 80)
+);
+
+const fadeEl__15 = document.querySelectorAll(".mini-container .text-mask-sub");
+const rect_15 = document.getElementById("mini_container");
+
+window.addEventListener(
+  "scroll",
+  _.throttle(function () {
+    if (rect_15.getBoundingClientRect().y < 850) {
+      fadeEl__15.forEach(function (fadeEl, index) {
+        gsap.to(fadeEl, 1, {
+          delay: (index + 1) * 0.3,
           y: -100,
           opacity: 1,
         });

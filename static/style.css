@@ -601,6 +601,22 @@ footer a:hover {
   line-height: 1.5;
 }
 
+.sec-5 .mini-container {
+  display: block;
+  text-align: center;
+  width: 100vw;
+  padding-top: 20vh;
+}
+
+.sec-5 .mini-container .text-mask-sub {
+  display: inline-block;
+  position: relative;
+  top: 1.33vw;
+  font-size: 2.2vw;
+  text-align: left;
+  opacity: 1;
+  width: 80vw;
+}
 /*****   SECTION-6   *****/
 /*****   SECTION-6   *****/
 /*****   SECTION-6   *****/
@@ -619,7 +635,6 @@ footer a:hover {
 .sec-6 .container__7 .container-7-img {
   padding: 0 0 0 5vw;
   opacity: 0;
-  filter: drop-shadow(12px 12px 12px #000);
 }
 
 .sec-6 .container__7 .text-mask {
@@ -657,7 +672,6 @@ footer a:hover {
 .sec-6 .container__8 .container-8-img {
   opacity: 0;
   overflow: hidden;
-  filter: drop-shadow(12px 12px 12px #000);
 }
 
 /*****   Team   *****/
@@ -686,6 +700,10 @@ footer a:hover {
   background-color: #c8ccd0;
   overflow: hidden;
   margin-top: 7.33vw;
+}
+
+.team_sec2 .members_photo > img {
+  filter: drop-shadow(10px 10px 10px #000);
 }
 
 .team_col {
