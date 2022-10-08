@@ -701,7 +701,7 @@ footer a:hover {
 }
 
 .team_sec1 {
-  margin-top: 7.3333vw;
+  margin-top: 4vw;
 }
 
 .team_sec1 .team_col0 > h1 {
@@ -715,7 +715,6 @@ footer a:hover {
   right: 5px;
   background-color: #c8ccd0;
   overflow: hidden;
-  margin-top: 7.33vw;
 }
 
 .team_sec2 .members_photo > img {
@@ -755,6 +754,10 @@ footer a:hover {
 
 .team_col_odd .photo_jungkuk {
   max-width: 26vw;
+}
+
+.team_col_odd .photo_wonhee {
+  max-width: 29vw;
 }
 
 .team_col_even .photo_heetae {
@@ -834,8 +837,8 @@ footer a:hover {
   width: 100vw;
   height: 760vh;
   background-color: #c8ccd0;
-  margin-top: 7.33vw;
   text-align: center;
+  overflow: scroll;
 }
 
 .sec-att .att-mask > span {
@@ -891,7 +894,6 @@ footer a:hover {
   width: 100vw;
   height: 440vh;
   background-color: #c8ccd0;
-  margin-top: 7.33vw;
   align-items: center;
   flex-direction: column;
 }
