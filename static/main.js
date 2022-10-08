@@ -162,7 +162,7 @@ const fadeEl__9 = document.querySelectorAll(".count");
 window.addEventListener(
   "scroll",
   _.debounce(function () {
-    if (rect_10.getBoundingClientRect().y < 650) {
+    if (rect_10.getBoundingClientRect().y < 1200) {
       fadeEl__9.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
           x: -100,
