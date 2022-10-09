@@ -108,7 +108,7 @@ const rect_4 = document.getElementById("col-2");
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    if (rect_4.getBoundingClientRect().y < 850) {
+    if (rect_4.getBoundingClientRect().y < 850 || null) {
       fadeEl__4.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
           delay: (index + 1) * 0.4,
@@ -126,7 +126,7 @@ const rect_5 = document.getElementById("sec-2-img");
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    if (rect_5.getBoundingClientRect().y < 750) {
+    if (rect_5.getBoundingClientRect().y < 750 || null) {
       fadeEl__5.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
           delay: index * 1.5,
@@ -145,7 +145,7 @@ const rect_6 = document.getElementById("row-1-sub");
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    if (rect_6.getBoundingClientRect().y < 850) {
+    if (rect_6.getBoundingClientRect().y < 850 || null) {
       fadeEl__6.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
           delay: (index + 1) * 0.3,
@@ -162,7 +162,7 @@ const fadeEl__9 = document.querySelectorAll(".count");
 window.addEventListener(
   "scroll",
   _.debounce(function () {
-    if (rect_10.getBoundingClientRect().y < 1200) {
+    if (rect_10.getBoundingClientRect().y < 1200 || null) {
       fadeEl__9.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
           x: -100,
@@ -199,7 +199,7 @@ const fadeEl__11 = document.querySelectorAll(".column-3-sub .text-mask-sub");
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    if (rect_10.getBoundingClientRect().y < 850) {
+    if (rect_10.getBoundingClientRect().y < 850 || null) {
       fadeEl__11.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
           delay: (index + 1) * 0.3,
@@ -218,7 +218,7 @@ const rect_12 = document.getElementById("container-7");
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    if (rect_12.getBoundingClientRect().y < 850) {
+    if (rect_12.getBoundingClientRect().y < 850 || null) {
       fadeEl__12.forEach((fadeEl, index) => {
         gsap.to(fadeEl, 1, {
           delay: (index + 1) * 1.2,
@@ -240,7 +240,7 @@ const rect_13 = document.getElementById("container-8");
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    if (rect_13.getBoundingClientRect().y < 800) {
+    if (rect_13.getBoundingClientRect().y < 800 || null) {
       fadeEl__13.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
           delay: (index + 1) * 0.8,
@@ -262,7 +262,7 @@ const rect_14 = document.getElementById("row-1");
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    if (rect_14.getBoundingClientRect().y < 850) {
+    if (rect_14.getBoundingClientRect().y < 850 || null) {
       fadeEl__14.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
           delay: (index + 1) * 0.3,
@@ -282,7 +282,7 @@ const rect_15 = document.getElementById("mini_container");
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    if (rect_15.getBoundingClientRect().y < 850) {
+    if (rect_15.getBoundingClientRect().y < 850 || null) {
       fadeEl__15.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
           delay: (index + 1) * 0.3,
@@ -483,5 +483,37 @@ window.onscroll = () =>
 //   e.preventDefault();
 // }
 
-$("#loading").show();
-$("#loading2").addClass("spinner2");
+const swiper = new Swiper(".swiper", {
+  // Optional parameters
+  direction: "horizontal",
+  loop: true,
+});
+
+new Swiper(".sec-5 .swiper", {
+  slidesPerView: 3,
+  spaceBetween: 50,
+  loop: true,
+  centeredSlides: true,
+  autoplay: {
+    delay: 3000,
+  },
+});
+
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function () {
+    /* Toggle between adding and removing the "active" class,
+    to highlight the button that controls the panel */
+    this.classList.toggle("active");
+
+    /* Toggle between hiding and showing the active panel */
+    var panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}

@@ -607,10 +607,83 @@ footer a:hover {
   text-align: center;
 }
 
+.sec-4 .container-4-3 .col-4-1 .text-mask {
+  max-width: 80%;
+}
+
+.sec-4 .container-4-3 .col-4-1 .text-mask > span {
+  font-size: 1.5vw;
+  line-height: normal;
+}
+
 .sec-4 .container-4-3 .col-4-2 {
   width: 50%;
 }
 
+.sec-4 .container-4-3 .col-4-1 .container-accord {
+  display: block;
+  padding-top: 4.33vw;
+}
+
+.sec-4 .container-4-3 .col-4-2 .container-accord {
+  display: block;
+  padding-top: 4.33vw;
+}
+
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 80%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  margin: 1vw 0;
+  font-size: 1.3vw;
+}
+
+.accordion:after {
+  content: "\002B";
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+/* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+.active,
+.accordion:hover {
+  background-color: #ccc;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+/* Style the accordion panel. Note: hidden by default */
+.panel-4-1 {
+  width: 80%;
+  padding: 10px 18px;
+  text-align: left;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  margin: auto;
+  font-size: 1vw;
+}
+
+.panel-4-2 {
+  width: 80%;
+  padding: 10px 18px;
+  text-align: left;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+  margin-left: 0vw;
+  font-size: 1vw;
+}
 /*****   SECTION-5   *****/
 /*****   SECTION-5   *****/
 /*****   SECTION-5   *****/
@@ -618,9 +691,11 @@ footer a:hover {
 .sec-5 {
   background-color: #f4f8f8;
   width: 100vw;
-  height: 100vh;
+  height: 180vh;
   display: flex;
   flex-direction: column;
+  overflow: scroll;
+  position: relative;
 }
 
 .sec-5 .container__5 {
@@ -678,11 +753,33 @@ footer a:hover {
   display: inline-block;
   position: relative;
   top: 1.33vw;
-  font-size: 2.2vw;
+  font-size: 1.6vw;
   text-align: left;
   opacity: 1;
   width: 80vw;
 }
+
+.sec-5 .swiper {
+  width: 100vw;
+  height: 50vh;
+  top: 90vh;
+  position: absolute;
+}
+
+.sec-5 .swiper .swiper-slide {
+  position: relative;
+  opacity: 0.3;
+  transition: opacity 1s;
+}
+
+.sec-5 .swiper .swiper-slide > img {
+  width: 100%;
+}
+
+.sec-5 .swiper .swiper-slide-active {
+  opacity: 1;
+}
+
 /*****   SECTION-6   *****/
 /*****   SECTION-6   *****/
 /*****   SECTION-6   *****/
@@ -760,7 +857,7 @@ footer a:hover {
 
 .team_sec2 {
   width: 100%;
-  height: 560vh;
+  height: 620vh;
   left: 5px;
   right: 5px;
   background-color: #c8ccd0;
@@ -812,6 +909,10 @@ footer a:hover {
 
 .team_col_even .photo_heetae {
   max-width: 35vw;
+}
+
+.team_col_even .photo_younghyun {
+  max-width: 25vw;
 }
 
 .team_col_odd .members_photo > img {

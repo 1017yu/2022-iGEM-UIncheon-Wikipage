@@ -278,13 +278,7 @@ tr {
 label {
   display: inline-block;
 }
-button {
-  border-radius: 0;
-}
-button:focus:not(:focus-visible) {
-  outline: 0;
-}
-button,
+
 input,
 optgroup,
 select,
@@ -294,7 +288,7 @@ textarea {
   font-size: inherit;
   line-height: inherit;
 }
-button,
+
 select {
   text-transform: none;
 }
@@ -360,9 +354,7 @@ legend + * {
 ::-webkit-datetime-edit-year-field {
   padding: 0;
 }
-::-webkit-inner-spin-button {
-  height: auto;
-}
+
 [type="search"] {
   outline-offset: -2px;
   -webkit-appearance: textfield;

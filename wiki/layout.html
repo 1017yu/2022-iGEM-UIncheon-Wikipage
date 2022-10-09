@@ -18,19 +18,21 @@
 
     <!-- Custom CSS -->
     <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+    <link
       href="{{ url_for('static', filename = 'style.css') }}"
       rel="stylesheet"
     />
     <title>{% block title %}{% endblock %}ALGENE::UIncheon</title>
   </head>
   <body>
-
     <!-- Navigation -->
     {% include 'menu.html' %}
 
     <!-- Header -->
-    <header>
-      <!-- <section class="visual">
+    <!-- <section class="visual">
         <div class="visual__inner"></div>
       </section> -->
 
@@ -57,8 +59,8 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="{{ url_for('static', filename = 'bootstrap.bundle.min.js') }}"></script>
     <script src="{{ url_for('static', filename = 'main.js') }}"></script>
-      </body>
+  </body>
 </html>
