@@ -537,6 +537,11 @@ footer a:hover {
   opacity: 0;
 }
 
+.sec-3 .container-3 .text-mask-source {
+  font-size: 0.1vw;
+  text-align: right;
+}
+
 /*****   SECTION-4   *****/
 /*****   SECTION-4   *****/
 /*****   SECTION-4   *****/
@@ -684,7 +689,7 @@ footer a:hover {
 .sec-6 {
   background-color: #c9dbdb;
   width: 100vw;
-  height: 180vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
 }
