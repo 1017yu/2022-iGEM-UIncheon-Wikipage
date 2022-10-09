@@ -360,6 +360,29 @@ footer a:hover {
   filter: drop-shadow(10px 10px 10px #000);
 }
 
+.sec-1-video__area {
+  position: absolute;
+  display: flex;
+  overflow: hidden;
+  right: 2.333vw;
+  top: 5vw;
+  opacity: 1;
+  filter: drop-shadow(10px 10px 10px #000);
+  padding: 0;
+  width: 50vw;
+  height: 80vh;
+  vertical-align: center;
+}
+
+.video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  object-fit: fill;
+  display: flex;
+  margin: 0;
+}
+
 /*****   SECTION-2   *****/
 
 .sec-2 {
@@ -520,6 +543,7 @@ footer a:hover {
 
 .sec-4 {
   background-color: #dcd1d7;
+  display: block;
 }
 
 .sec-4-content {
@@ -528,8 +552,8 @@ footer a:hover {
 }
 
 .sec-4 .container-4 {
-  display: flex;
   top: 0;
+  height: 40vh;
 }
 
 .sec-4 .container-4 .row-1 {
@@ -559,6 +583,27 @@ footer a:hover {
   font-size: 1.5vw;
   text-align: left;
   opacity: 0;
+}
+
+.sec-4 .container-4-2 {
+  text-align: center;
+  padding-top: 5vh;
+  height: 30vh;
+}
+
+.sec-4 .container-4-3 {
+  height: 80vh;
+  display: flex;
+}
+
+.sec-4 .container-4-3 .col-4-1 {
+  width: 50%;
+  align-items: center;
+  text-align: center;
+}
+
+.sec-4 .container-4-3 .col-4-2 {
+  width: 50%;
 }
 
 /*****   SECTION-5   *****/
