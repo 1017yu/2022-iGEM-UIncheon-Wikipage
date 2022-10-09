@@ -548,10 +548,10 @@ footer a:hover {
 .sec-4 .container-4 .row-1 .row-1-sub {
   display: block;
   position: absolute;
-  max-width: 100vw;
-  top: 16.333vw;
+  max-width: 50vw;
+  top: 3.833vw;
   line-height: 2.8333vw;
-  left: -4.33vw;
+  right: 4.33vw;
 }
 
 .sec-4 .container-4 .row-1 .text-mask-sub {
