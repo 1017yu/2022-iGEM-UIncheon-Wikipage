@@ -875,8 +875,8 @@ footer a:hover {
 /*****   Team   *****/
 
 .banner {
-  width: 100%;
-  height: 40%;
+  width: 100vw;
+
   position: sticky;
 }
 
