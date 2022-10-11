@@ -1191,12 +1191,21 @@ footer a:hover {
 }
 
 .container-hp-1 .text-mask-img {
+  position: relative;
   text-align: center;
+  width: 100%;
 }
 
 .container-hp-1 .text-mask-img > span {
   font-size: small;
   font-weight: 300;
+}
+
+.container-hp-1 .text-mask-img-2 {
+  position: relative;
+  text-align: left;
+  width: 100%;
+  vertical-align: top;
 }
 
 /*****   footer   *****/
