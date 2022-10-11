@@ -251,9 +251,10 @@ const rect_16 = document.getElementById("sidebar-hp");
 window.addEventListener(
   "scroll",
   _.throttle(function () {
-    if (window.scrollY > 100) {
+    if (window.pageYOffset > 100) {
       fadeEl__16.forEach(function (fadeEl, index) {
         gsap.to(fadeEl, 1, {
+          delay: (index + 1) * 0.3,
           opacity: 1,
         });
       });
@@ -264,7 +265,7 @@ window.addEventListener(
         });
       });
     }
-  }, 10)
+  }, 100)
 );
 
 const fadeEl_17 = document.getElementById("sidelink-1");

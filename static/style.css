@@ -542,7 +542,7 @@ footer a:hover {
 
 .sec-4-content {
   width: 100vw;
-  height: 130vh;
+  height: 140vh;
 }
 
 .sec-4 .container-4 {
@@ -1155,15 +1155,15 @@ footer a:hover {
   flex-direction: column;
   width: 15vw;
   font-size: 1.5vw;
-  margin: -10vw 0 0 2vw;
+  margin: 0 0 0 2vw;
   text-align: center;
-  opacity: 0;
+  opacity: 1;
 }
 
 .sec-hp .sidebar-hp > a {
   text-decoration: none;
   color: rgba(0, 0, 0, 1);
-  padding: 0.5vw 0;
+  padding: 1vw 0;
 }
 
 .sec-hp .container-hp-1 {
