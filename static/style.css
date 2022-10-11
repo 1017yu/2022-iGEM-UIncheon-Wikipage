@@ -1082,6 +1082,7 @@ footer a:hover {
   background-color: #c8ccd0;
   align-items: center;
   flex-direction: column;
+  overflow: scroll;
 }
 
 .sec-collabo .text-mask-img {
@@ -1092,7 +1093,7 @@ footer a:hover {
 }
 
 .sec-collabo .collabo-container-1 {
-  text-align: center;
+  text-align: left;
   display: inline-block;
   padding: 0 100px;
   background-color: #f4f8f8;
@@ -1136,6 +1137,52 @@ footer a:hover {
 .sec-collabo .collabo-mask > span {
   font-size: 2.33vw;
   font-weight: 500;
+}
+
+.collabo-intr {
+  text-align: left;
+}
+
+/*****   HP   *****/
+/*****   HP   *****/
+/*****   HP   *****/
+
+.sec-hp {
+  background-color: #c8ccd0;
+  display: flex;
+  width: 100vw;
+  height: 700vh;
+  overflow: scroll;
+}
+
+.sec-hp .sidebar-hp {
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  width: 15vw;
+  font-size: 1.5vw;
+  margin: -10vw 0 0 2vw;
+  text-align: center;
+  opacity: 0;
+}
+
+.sec-hp .sidebar-hp > a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+  padding: 0.5vw 0;
+}
+
+.sec-hp .container-hp-1 {
+  padding: 3vw 20vw 0 30vw;
+}
+
+.hp-text-mask {
+  font-size: 2.5vw;
+  font-weight: 500;
+}
+
+.hp-text-mask-sub {
+  font-size: 1.2vw;
 }
 
 /*****   footer   *****/
