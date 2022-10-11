@@ -305,11 +305,12 @@ footer a:hover {
   background-color: #f4f8f8;
   /* height: 1054px; */
   vertical-align: middle;
-  height: 100vh;
+  height: 130vh;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 0.8vw;
+  overflow: scroll;
 }
 
 .sec-1 .container-1 .column-1 {
@@ -321,13 +322,13 @@ footer a:hover {
   width: 100vw;
   height: 100vh;
   vertical-align: middle;
-  padding: 13.3vw 5.20833vw;
+  padding: 13.3vw 5.20833vw 0vw;
 }
 
 .sec-1 .container-1 .col-1 {
   display: block;
   opacity: 0;
-  max-width: 400px;
+  max-width: 30vw;
   padding: 3 0.8333vh;
   margin-bottom: 20px;
 }
@@ -442,20 +443,7 @@ footer a:hover {
 
 .sec-3 {
   background-color: #2c2c6d;
-  height: 50vh;
-}
-
-.sec-3 .container-3 .column-3 {
-  flex-wrap: wrap;
-  position: absolute;
-  flex-direction: row;
-  vertical-align: middle;
-  margin-top: 100px;
-  width: 100vw;
-  height: 100vh;
-  padding: 5.3vw 5.20833vw 13.3vw 0;
-  left: 14.33vw;
-  color: #000;
+  height: 70vh;
 }
 
 .sec-3 .container-3 .column-3 .column-3-box {
@@ -490,7 +478,7 @@ footer a:hover {
   flex-wrap: wrap;
   position: absolute;
   justify-content: space-between;
-  top: 0vh;
+  top: 10vh;
   left: 13.3333vw;
   color: #000;
   background-color: #fff;
@@ -499,12 +487,12 @@ footer a:hover {
   text-align: center;
   width: 30vw;
 }
-
+/* 
 .sec-2 .container-2 .column-5 {
   flex-wrap: wrap;
   position: absolute;
   justify-content: space-between;
-  top: 50vh;
+  top: 10vh;
   left: 53.3333vw;
   color: #000;
   background-color: #fff;
@@ -512,13 +500,13 @@ footer a:hover {
   border-radius: 7%;
   text-align: center;
   width: 30vw;
-}
+} */
 
 .sec-3 .container-3 .column-5 {
   flex-wrap: wrap;
   position: absolute;
   justify-content: space-between;
-  top: 00vh;
+  top: 10vh;
   left: 53.3333vw;
   color: #000;
   background-color: #fff;
@@ -554,7 +542,7 @@ footer a:hover {
 
 .sec-4-content {
   width: 100vw;
-  height: 150vh;
+  height: 130vh;
 }
 
 .sec-4 .container-4 {
@@ -593,13 +581,16 @@ footer a:hover {
 
 .sec-4 .container-4-2 {
   text-align: center;
-  padding-top: 5vh;
   height: 30vh;
 }
 
 .sec-4 .container-4-3 {
   height: 80vh;
   display: flex;
+}
+
+.sec-4 .container-4-2 .row-2 {
+  padding-top: 10vh;
 }
 
 .sec-4 .container-4-3 .col-4-1 {
