@@ -41,13 +41,6 @@ window.addEventListener(
     }
   }, 300)
 );
-// // 상단으로 스크롤 버튼을 클릭하면,
-// toTopEl.addEventListener("click", function () {
-//   // 페이지 위치를 최상단으로 부드럽게(0.7초 동안) 이동.
-//   gsap.to(window, 0.7, {
-//     scrollTo: 0,
-//   });
-// });
 
 menu.addEventListener("mouseover", function onMouseOver() {
   hiddenDiv.style.height = "516px";
@@ -252,23 +245,44 @@ window.addEventListener(
   }, 80)
 );
 
-// const fadeEl__16 = document.querySelectorAll(".sec-hp .sidebar-hp");
-// const rect_16 = document.getElementById("sidebar-hp");
+const fadeEl__16 = document.querySelectorAll(".sec-hp .sidebar-hp");
+const rect_16 = document.getElementById("sidebar-hp");
 
-// window.addEventListener(
-//   "scroll",
-//   _.throttle(function () {
-//     if (rect_16.getBoundingClientRect().y > 295) {
-//       fadeEl__16.forEach(function (fadeEl, index) {
-//         gsap.to(fadeEl, 1, {
-//           delay: (index + 1) * 0.3,
-//           opacity: 1,
-//         });
-//       });
-//     } else {
-//     }
-//   }, 80)
-// );
+window.addEventListener(
+  "scroll",
+  _.throttle(function () {
+    if (window.scrollY > 100) {
+      fadeEl__16.forEach(function (fadeEl, index) {
+        gsap.to(fadeEl, 1, {
+          opacity: 1,
+        });
+      });
+    } else if (window.scrollY < 100) {
+      fadeEl__16.forEach(function (fadeEl, index) {
+        gsap.to(fadeEl, 1, {
+          opacity: 0,
+        });
+      });
+    }
+  }, 10)
+);
+
+const fadeEl_17 = document.getElementById("sidelink-1");
+const rect_17 = document.getElementById("containerHp1");
+
+window.addEventListener(
+  "scroll",
+  _.throttle(function () {
+    if (rect_17.getBoundingClientRect().y < -350) {
+      fadeEl_17.forEach(function (fadeEl, index) {
+        gsap.to(fadeEl, 1, {
+          opacity: 0,
+        });
+      });
+    } else {
+    }
+  }, 10)
+);
 
 // const fadeEl__12 = document.querySelectorAll(".sec-5");
 // window.addEventListener(
