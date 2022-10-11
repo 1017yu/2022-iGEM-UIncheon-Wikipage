@@ -1181,6 +1181,24 @@ footer a:hover {
   font-weight: 350;
 }
 
+.hp-text-mask-sub .span-sub {
+  border: 3px solid #bccef8;
+  border-radius: 1vw;
+  font-size: 1vw;
+  padding: 1vw;
+  background-color: #5f6f94;
+  color: #bccef8;
+}
+
+.container-hp-1 .text-mask-img {
+  text-align: center;
+}
+
+.container-hp-1 .text-mask-img > span {
+  font-size: small;
+  font-weight: 300;
+}
+
 /*****   footer   *****/
 /*****   footer   *****/
 /*****   footer   *****/
