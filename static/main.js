@@ -245,28 +245,28 @@ window.addEventListener(
   }, 80)
 );
 
-const fadeEl__16 = document.querySelectorAll(".sec-hp .sidebar-hp");
-const rect_16 = document.getElementById("sidebar-hp");
+// const fadeEl__16 = document.querySelectorAll(".sec-hp .sidebar-hp");
+// const rect_16 = document.getElementById("sidebar-hp");
 
-window.addEventListener(
-  "scroll",
-  _.throttle(function () {
-    if (window.pageYOffset > 100) {
-      fadeEl__16.forEach(function (fadeEl, index) {
-        gsap.to(fadeEl, 1, {
-          delay: (index + 1) * 0.3,
-          opacity: 1,
-        });
-      });
-    } else if (window.scrollY < 100) {
-      fadeEl__16.forEach(function (fadeEl, index) {
-        gsap.to(fadeEl, 1, {
-          opacity: 0,
-        });
-      });
-    }
-  }, 100)
-);
+// window.addEventListener(
+//   "scroll",
+//   _.throttle(function () {
+//     if (window.pageYOffset > 100) {
+//       fadeEl__16.forEach(function (fadeEl, index) {
+//         gsap.to(fadeEl, 1, {
+//           delay: (index + 1) * 0.3,
+//           opacity: 1,
+//         });
+//       });
+//     } else if (window.scrollY < 100) {
+//       fadeEl__16.forEach(function (fadeEl, index) {
+//         gsap.to(fadeEl, 1, {
+//           opacity: 0,
+//         });
+//       });
+//     }
+//   }, 100)
+// );
 
 const fadeEl_17 = document.getElementById("sidelink-1");
 const rect_17 = document.getElementById("containerHp1");

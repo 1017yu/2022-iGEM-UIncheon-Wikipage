@@ -878,6 +878,10 @@ footer a:hover {
   margin-top: 4vw;
 }
 
+.team_sec1 .team_col0 {
+  z-index: 14;
+}
+
 .team_sec1 .team_col0 > h1 {
   text-align: center;
 }
@@ -1145,29 +1149,36 @@ footer a:hover {
   background-color: #c8ccd0;
   display: flex;
   width: 100vw;
-  height: 900vh;
-  overflow: scroll;
+  height: 1000vh;
+}
+
+.sec-hp .sidebar-container {
+  position: relative;
+  display: block;
 }
 
 .sec-hp .sidebar-hp {
   display: flex;
-  position: fixed;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
   flex-direction: column;
   width: 15vw;
+  height: 100vh;
   font-size: 1.5vw;
-  margin: 0 0 0 2vw;
   text-align: center;
   opacity: 1;
+  margin: -10vw 0px 0px 2vw;
 }
 
 .sec-hp .sidebar-hp > a {
   text-decoration: none;
   color: rgba(0, 0, 0, 1);
-  padding: 1vw 0;
+  padding: 0.5vw 0;
 }
 
 .sec-hp .container-hp-1 {
-  padding: 13vw 20vw 0 30vw;
+  padding: 13vw 20vw 0px 10vw;
 }
 
 .hp-text-mask {
@@ -1214,11 +1225,37 @@ footer a:hover {
   margin: 0 0 0 3vw;
 }
 
-.container-hp-1 .text-mask-img-2 {
+.container-hp-1 .text-mask-img-3 {
   position: relative;
   display: flex;
   text-align: left;
   align-items: center;
+}
+
+.container-hp-1 .text-mask-img-3 .text-mask-span-3 {
+  position: relative;
+  text-align: left;
+  margin: 0 0 0 3vw;
+}
+
+.container-hp-1 .text-mask-img-4 {
+  position: relative;
+  display: block;
+  text-align: center;
+  align-items: center;
+}
+
+.container-hp-1 .text-mask-img-4 > img {
+  padding-top: 2vh;
+}
+
+.container-hp-1 .ref {
+  border: 1px solid #000;
+  line-height: 1;
+}
+
+.container-hp-1 .ref-container {
+  padding: 1vw 0 2vw 1vw;
 }
 
 /*****   footer   *****/
