@@ -1266,6 +1266,12 @@ footer a:hover {
 .footer {
   padding-top: 3rem !important;
   padding-bottom: 0.6667rem !important;
+  position: relative;
+  display: block;
+}
+
+.footer-container {
+  margin-left: 20vw;
 }
 
 .footer_main_menu {
@@ -1316,6 +1322,11 @@ footer a:hover {
 .foot_contact_mail {
   margin-top: 0.5vw;
   font-size: 1rem;
+}
+
+.footer-hp-content {
+  padding-top: 40px;
+  line-height: 4vh;
 }
 
 .material_icon {
