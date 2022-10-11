@@ -705,6 +705,7 @@ footer a:hover {
   overflow: hidden;
   margin: auto;
   font-size: 1vw;
+  transition: 0.9s;
 }
 
 .panel-4-2 {
@@ -716,6 +717,7 @@ footer a:hover {
   overflow: hidden;
   margin: auto;
   font-size: 1vw;
+  transition: 0.9s;
 }
 /*****   SECTION-5   *****/
 /*****   SECTION-5   *****/
@@ -807,6 +809,7 @@ footer a:hover {
 
 .sec-5 .swiper .swiper-slide > img {
   width: 100%;
+  height: 100%;
 }
 
 .sec-5 .swiper .swiper-slide-active {

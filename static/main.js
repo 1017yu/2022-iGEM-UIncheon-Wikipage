@@ -470,7 +470,7 @@ new Swiper(".sec-5 .swiper", {
   loop: true,
   centeredSlides: true,
   autoplay: {
-    delay: 3000,
+    delay: 6000,
   },
 });
 
