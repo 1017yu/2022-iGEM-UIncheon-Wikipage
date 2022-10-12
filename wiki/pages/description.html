@@ -1,57 +1,182 @@
-{% extends "layout.html" %}
-  
-{% block title %}Project Description{% endblock %}
-{% block lead %}Describe how and why you chose your iGEM project.{% endblock %}
+{% extends "layout.html" %} {% block title %}Project Description:: {% endblock
+%} {% block lead %}Describe how and why you chose your iGEM project.{% endblock
+%} {% block page_content %}
 
-{% block page_content %}
+<div class="team_sec1">
+  <div class="team_col0">
+    <img
+      src="https://static.igem.wiki/teams/4310/wiki/team-description-banner.png"
+      class="banner"
+    />
+  </div>
+</div>
 
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Bronze Medal Criterion #3</h4>
-      <p>Describe how and why you chose your iGEM project.<p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/medals">2022 Medals Page</a> for more information.</p>
+<div class="sec sec-description">
+  <div class="sidebar-container">
+    <a id="link-1" href="#sidelink-1"></a>
+    <div class="sidebar-hp sidebar-description" id="sidebar-hp">
+      <br />
+      <br />
+      <br />
+      <a id="sidelink-1" href="#link-1"
+        >Golden Gate Assembly: Prefix/Suffix Block</a
+      >
+      <a id="sidelink-2" href="#link-2">General Description</a>
+      <a id="sidelink-3" href="#link-3">Detailed Description</a>
+      <a id="sidelink-4" href="#link-4">Experiment Design</a>
+      <a id="sidelink-5" href="#link-5">Experiment Protocol</a>
+      <a id="sidelink-6" href="#link-6">References</a>
+
+      <a href="#">⇪</a>
+    </div>
+  </div>
+  <div class="container-hp-1" id="containerHp1">
+    <div class="hp-text-mask">
+      <span>Detailed Description for Each Biosensors</span>
+    </div>
+    <br />
+    <div class="hp-text-mask-sub" style="padding: 0 2vw">
+      <span
+        ><div class="engi-under">
+          <p><i>Biosensor #1: Inducible Promoters (pHSP70A)</i></p>
+        </div>
+        In this project, two types of inducible promoters, pHsp70A (Kropat et
+        al., 1995), pCnAFP (Kim et al., 2020), two types of recombinases, phiC31
+        (Thomson et al., 2010) and Cre (Sauer & Henderson, 1988), and a quorum
+        sensing system, pTra(4X)::m35S (You et al., 2006), are tested in C.
+        vulgaris. The expression of these bio-bricks has been tested in
+        eukaryotic cells but has not been tested specifically for C. vulgaris.
+        The purpose of this project is to validate the expression of these
+        bio-bricks for C. vulgaris and to utilize them for the development of
+        efficient biosensors and switches.
+
+        <br />
+        <br />
+
+        Our research and development will not stop at biosensors and
+        bio-switches. We designed a bio-switch using an inducible promoter and
+        recombinase, and also designed a quorum sensing system for microalgae.
+        Using these biosensors together, replacing GFP with toxin or antitoxin,
+        our team’s final goal is to develop an effective biocontainment system
+        for genetically modified microalgae-bacteria consortia that can be used
+        in wastewater treatment systems.
+
+        <br />
+        <br />
+        <br />
+
+        <div class="engi-under">
+          <p><i>Biosensor #1-2: Cold-inducible Promoter (pCnAFP)</i></p>
+        </div>
+        pCnAFP is a cold-inducible promoter derived from a polar diatom,
+        Chaetoceros neogracile. The transcription initiation of a cold inducible
+        promoter is activated when cells are exposed to low temperature, 10 °C
+        for 2 hours (Kim et al., 2020).
+
+        <br />
+        <br />
+        <br />
+
+        <div class="engi-under">
+          <p>
+            <i
+              >Biosensor #2: Bioswitch: Inducible Promoter - Recombinase
+              Activity</i
+            >
+          </p>
+        </div>
+        The bio-switch functions by activating inducible promoters to trigger
+        recombinases, which can irreversibly convert the genetic sequence. With
+        site-specific recombinases, phiC31 and Cre, precise DNA cleavage and
+        ligation are possible. Site-specific recombinases efficiently catalyze
+        recombination between specific targeting sites to delete, insert,
+        invert, or exchange DNA. Therefore, these groups of enzymes are capable
+        of site-specific deletions, excising unwanted DNA from the genome
+        (Thomson et al., 2010).
+
+        <br />
+        <br />
+
+        The Streptomyces phage PhiC31 can site-specifically integrate DNA into
+        the bacterial host by integrating a pair of specific recognition sites
+        attP and attB (attachment site Phage/attachment site Bacteria) (Thomson
+        et al., 2010).
+
+        <br />
+        <br />
+
+        >A 38-kDa Cre protein, from coliphage P1, can promote genetic synapsis
+        and DNA recombination in eukaryotic cells. The recombination takes place
+        at a specific location known as lox. The recombination between two lox
+        sites, similar to that of phiC31 recombinase, can only be catalyzed by
+        Cre recombinase (Sauer & Henderson, 1988).
+
+        <br />
+        <br />
+
+        In this regard, the sequence between two attachment sites can be
+        irreversibly deleted from the genome. This way, it is possible to start
+        or stop the transcription of certain genes when needed, using an
+        inducible promoter and recombinase, as shown below.
+
+        <br />
+        <br />
+        <br />
+
+        <div class="engi-under">
+          <p>
+            <i
+              >Biosensor #3: Quorum-Sensing Promoter & Protein (Tra(4X)::m35S &
+              VP16 TAD::TraR)
+            </i>
+          </p>
+        </div>
+
+        The quorum-sensing system of bacteria is tested in microalgae. In the
+        case of the quorum-sensing activator, TraR, corresponding to the
+        quorum-sensing-controlled promoter, pTraR, it is fused with the VP16
+        protein to increase the reactivity in eukaryotic cells (You et al.,
+        2006). The quorum sensing-controlled promoter is activated only when
+        there is AHL produced in the presence of a bacterial signal molecule
+        called N-3-oxo-octanoyl homoserine lactone (C8 AHL).
+
+        <br />
+        <br />
+
+        In this experiment, the quorum sensing promoter (Tra(4X) :: m35S) and
+        the quorum sensing protein (VP16 TAD :: TraR) are tested in C. vulgaris
+        because their effects in plant cells were verified. The Bacterial quorum
+        sensing promoter and protein were used after slight modification in a
+        way such that they could be expressed and operated in eukaryotic cells.
+        In the case of Tra Promoter, when TraR protein binds to C8AHL, it
+        attaches to the Tra box (5′-ATGTGCAGATCTGCACAT-3′) and induces the
+        operation of bacterial Tra-quorum-sensing-controlled promoter (pTraR).
+        Therefore, the part from pTraR that functions as the binding site for
+        TraR protein are combined with the promoter for plant cells. For the
+        plant cell promoter, minimal CAMV 35S promoter (m35S) is used.
+
+        <br />
+        <br />
+
+        The bacterial quorum sensing protein, TraR, is also modified. C8 AHL
+        function as an inducer, and TraR is its receptor/regulator. The
+        C-terminal region of the TraR protein is responsible for the
+        transcriptional activation and binding to the Tra box of pTraR. For its
+        operation in eukaryotic cells, the TraR is C-terminally fused with the
+        transactivation domain of Virus Protein 16 (VP16 TAD), derived from
+        Herpes simplex virus-1 (You et al., 2006). VP16 functions for viral gene
+        transcription and replication, promoting its expression after infection
+        (Reyes et al., 2022). In this regard, fusing VP16 TAD to TraR can
+        increase the reactivity of the quorum sensing in a eukaryotic cell.
+
+        <br />
+        <a id="link-4" href="#sidelink-4"></a>
+
+        <br />
+        <br />
+        <hr />
+      </span>
     </div>
   </div>
 </div>
-
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>What should this page contain?</h2>
-    <hr>
-    <ul>
-      <li>A clear and concise description of your project.</li>
-      <li>A detailed explanation of why your team chose to work on this particular project.</li>
-      <li>References and sources to document your research.</li>
-      <li>Use illustrations and other visual resources to explain your project.</li>
-    </ul>
-  </div>
-  <div class="col-lg-4">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2019.igem.org/Team:Leiden/Description">2019 Leiden</a></li>
-      <li><a href="https://2019.igem.org/Team:ITESO_Guadalajara/Description">2019 ITESO Guadalajara</a></li>
-      <li><a href="https://2020.igem.org/Team:Technion-Israel/Description">2020 Technion Israel</a></li>
-      <li><a href="https://2020.igem.org/Team:Botchan_Lab_Tokyo/Description">2020 Botchan Lab Tokyo</a></li>
-      <li><a href="https://2020.igem.org/Team:St_Andrews/Description">2020 St Andrews</a></li>
-      <li><a href="https://2020.igem.org/Team:MIT/Description">2020 MIT</a></li>
-    </ul>
-  </div>
-</div>
-
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>Some advice</h2>
-    <hr>
-    <p>We encourage you to put up a lot of information and content on your wiki, but we also encourage you to include summaries as much as possible. If you think of the sections in your project description as the sections in a publication, you should try to be concise, accurate, and unambiguous in your achievements. Your Project Description should include more information than your project abstract.</p>
-  </div>
-  <div class="col-lg-4">
-    <h2>References</h2>
-    <hr>
-    <p>iGEM teams are encouraged to record references you use during the course of your research. They should be posted somewhere on your wiki so that judges and other visitors can see how you thought about your project and what works inspired you.</p>
-  </div>
-</div>
-
 {% endblock %}

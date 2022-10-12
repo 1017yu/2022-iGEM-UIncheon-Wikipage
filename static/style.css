@@ -1145,6 +1145,56 @@ footer a:hover {
   text-align: left;
 }
 
+/*****   description   *****/
+/*****   description   *****/
+/*****   description   *****/
+
+.sec-description {
+  background-color: #c8ccd0;
+  display: flex;
+  max-width: 100vw;
+  height: 300vh;
+}
+
+.sec-description .text-mask-engi {
+  text-align: center;
+  font-size: 1.7vw;
+}
+
+.sec-description .sidebar-container {
+  position: relative;
+  display: block;
+  opacity: 1;
+}
+.sec-description .sidebar-container .sidebar-en.sec-description > a {
+  cursor: default;
+}
+
+.sec-description .sidebar-hp {
+  opacity: 0;
+}
+
+.sec-description .sidebar-hp > a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+  padding: 0.5vw 0;
+}
+
+.sec-description .container-hp-1 {
+  padding: 7vw 20vw 0px 7vw;
+  margin-left: 12vw;
+}
+
+.sec-description .engi-under > p {
+  text-decoration: underline;
+  font-size: 1.4vw;
+}
+
+.sec-description .reference {
+  padding-left: 4vw;
+  font-size: 0.8vw;
+}
+
 /*****   engineering   *****/
 /*****   engineering   *****/
 /*****   engineering   *****/
@@ -1200,6 +1250,94 @@ footer a:hover {
 }
 
 .sec-engineering .reference {
+  padding-left: 4vw;
+  font-size: 0.8vw;
+}
+
+/*****   experiment   *****/
+/*****   experiment   *****/
+/*****   experiment   *****/
+
+.sec-experiment {
+  background-color: #c8ccd0;
+  display: flex;
+  max-width: 100vw;
+  height: 450vh;
+}
+
+.sec-experiment .text-mask-engi {
+  text-align: center;
+  font-size: 1.7vw;
+}
+
+.sec-experiment .sidebar-container {
+  position: relative;
+  display: block;
+  opacity: 1;
+}
+.sec-experiment .sidebar-container .sidebar-en.sec-experiment > a {
+  cursor: default;
+}
+
+.sec-experiment .sidebar-hp {
+  opacity: 0;
+}
+
+.sec-experiment .sidebar-hp > a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+  padding: 0.5vw 0;
+}
+
+.sec-experiment .container-hp-1 {
+  padding: 7vw 20vw 0px 25vw;
+}
+
+.sec-experiment .reference {
+  padding-left: 4vw;
+  font-size: 0.8vw;
+}
+
+/*****   implementation   *****/
+/*****   implementation   *****/
+/*****   implementation   *****/
+
+.sec-implementation {
+  background-color: #c8ccd0;
+  display: flex;
+  max-width: 100vw;
+  height: 120vh;
+}
+
+.sec-implementation .text-mask-engi {
+  text-align: center;
+  font-size: 1.7vw;
+}
+
+.sec-implementation .sidebar-container {
+  position: relative;
+  display: block;
+  opacity: 1;
+}
+.sec-implementation .sidebar-container .sidebar-en.sec-implementation > a {
+  cursor: default;
+}
+
+.sec-implementation .sidebar-hp {
+  opacity: 0;
+}
+
+.sec-implementation .sidebar-hp > a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+  padding: 0.5vw 0;
+}
+
+.sec-implementation .container-hp-1 {
+  padding: 7vw 20vw 0px 13vw;
+}
+
+.sec-implementation .reference {
   padding-left: 4vw;
   font-size: 0.8vw;
 }
@@ -1411,7 +1549,7 @@ footer a:hover {
 }
 
 .sec-fd .container-hp-1 {
-  padding: 13vw 20vw 0px 10vw;
+  padding: 7vw 20vw 0px 10vw;
 }
 
 /*****   footer   *****/

@@ -1,19 +1,81 @@
-{% extends "layout.html" %}
-  
-{% block title %}Proposed Implementation{% endblock %}
-{% block lead %}Explain how you would implement your project in the real world.{% endblock %}
-
-{% block page_content %}
-
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Silver Medal Criterion #4</h4>
-      <p>Explain how you would implement your project in the real world.<p>
-      <hr>
-      <p>Please see the <a href="https://competition.igem.org/judging/medals">2022 Medals Page</a> for more information.</p>
-    </div>
+{% extends "layout.html" %} {% block title %}Proposed Implementation{% endblock
+%} {% block lead %}Explain how you would implement your project in the real
+world.{% endblock %} {% block page_content %}
+<div class="team_sec1">
+  <div class="team_col0">
+    <img
+      src="https://static.igem.wiki/teams/4310/wiki/team-implementation-banner.png"
+      class="banner"
+    />
   </div>
 </div>
 
+<div class="sec sec-implementation">
+  <div class="sidebar-container">
+    <div class="sidebar-hp sidebar-implementation" id="sidebar-hp">
+      <br />
+      <br />
+      <br />
+      <a id="sidelink-1" href="#link-1"
+        >Golden Gate Assembly: Prefix/Suffix Block</a
+      >
+      <a id="sidelink-2" href="#link-2">General Description</a>
+      <a id="sidelink-3" href="#link-3">Detailed Description</a>
+      <a id="sidelink-4" href="#link-4">Experiment Design</a>
+      <a id="sidelink-5" href="#link-5">Experiment Protocol</a>
+      <a id="sidelink-6" href="#link-6">References</a>
+
+      <a href="#">⇪</a>
+    </div>
+  </div>
+  <div class="container-hp-1" id="containerHp1">
+    <div class="hp-text-mask">
+      <span>General Description</span>
+      <hr />
+    </div>
+    <div class="hp-text-mask-sub" style="padding: 0 2vw">
+      <br />
+      <div class="hp-text-mask-sub" style="padding: 0 0.2vw">
+        <span
+          >Our team has designed and tested various biosensors for C. vulgaris,
+          using inducible promoters and recombinases. Inducible promoters are
+          triggered only at certain conditions, working as biosensors. Our team
+          has further developed the inducible promoters into bio-switch by
+          utilizing recombinases, thereby creating C. vulgaris strain that can
+          constantly express certain genes once the switch is turned on. The
+          detailed structure of the biosensors and switches is described below.
+
+          <br />
+          <br />
+
+          In this project, two types of inducible promoters, pHsp70A (Kropat et
+          al., 1995), pCnAFP (Kim et al., 2020), two types of recombinases,
+          phiC31 (Thomson et al., 2010) and Cre (Sauer & Henderson, 1988), and a
+          quorum sensing system, pTra(4X)::m35S (You et al., 2006), are tested
+          in C. vulgaris. The expression of these bio-bricks has been tested in
+          eukaryotic cells but has not been tested specifically for C. vulgaris.
+          The purpose of this project is to validate the expression of these
+          bio-bricks for C. vulgaris and to utilize them for the development of
+          efficient biosensors and switches.
+
+          <br />
+          <br />
+
+          Our research and development will not stop at biosensors and
+          bio-switches. We designed a bio-switch using an inducible promoter and
+          recombinase, and also designed a quorum sensing system for microalgae.
+          Using these biosensors together, replacing GFP with toxin or
+          antitoxin, our team’s final goal is to develop an effective
+          biocontainment system for genetically modified microalgae-bacteria
+          consortia that can be used in wastewater treatment systems.
+        </span>
+        <a id="link-3" href="#sidelink-3"></a>
+        <br />
+        <br />
+        <br />
+        <hr />
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}

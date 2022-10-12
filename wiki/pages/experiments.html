@@ -1,28 +1,328 @@
-{% extends "layout.html" %}
-  
-{% block title %}Experiments{% endblock %}
-{% block lead %}Describe the research, experiments, and protocols you used in your iGEM project.{% endblock %}
-
-{% block page_content %}
-
-<div class="row mt-4">
-  <div class="col-lg-8">
-    <h2>What should this page contain?</h2>
-    <hr>
-    <p>Describe the research, experiments, and protocols you used in your iGEM project. These should be detailed enough for another team to repeat your experiments.</p>
-    <p>If you made Parts this year, please remember to put all information, characterization, and measurement data on the Part's Main Page on the <a href="http://parts.igem.org/Main_Page">Registry</a>.</p>
+{% extends "layout.html" %} {% block title %}Experiments:: {% endblock %} {%
+block lead %}Describe the research, experiments, and protocols you used in your
+iGEM project.{% endblock %} {% block page_content %}
+<div class="team_sec1">
+  <div class="team_col0">
+    <img
+      src="https://static.igem.wiki/teams/4310/wiki/team-experiments-banner.png"
+      class="banner"
+    />
   </div>
-  <div class="col-lg-4">
-    <h2>Inspirations</h2>
-    <hr>
-    <ul>
-      <li><a href="https://2019.igem.org/Team:Nantes/Experiments">2019 Nantes</a></li>
-      <li><a href="https://2019.igem.org/Team:TU_Eindhoven/Experiments">2019 TU Eindhoven</a></li>
-      <li><a href="https://2019.igem.org/Team:Mingdao/Demonstrate">2019 Mingdao</a></li>
-      <li><a href="https://2020.igem.org/Team:Amsterdam/Experiments">2020 Amsterdam</a></li>
-      <li><a href="https://2020.igem.org/Team:NCTU_Formosa/Experiments">2020 NCTU Formosa</a></li>
-      <li><a href="https://2020.igem.org/Team:USAFA/Experiments">2020 USAFA</a></li>
-    </ul>
+</div>
+<div class="sec sec-experiment">
+  <div class="container-hp-1" id="containerHp1">
+    <div class="hp-text-mask">
+      <span>Experiment Design</span>
+    </div>
+    <br />
+    <!-- Experiment Design -->
+    <!-- Experiment Design -->
+    <!-- Experiment Design -->
+    <br />
+    <div class="hp-text-mask-sub" style="padding: 0 0.2vw">
+      <span
+        ><div class="engi-under">
+          <p><i>Biosensor #1: Heat shock-inducible Promoter</i></p>
+        </div>
+
+        Heat shock-inducible promoter activity in C. vulgaris is tested by
+        observing GFP expression.<br />The fluorescence intensity was compared
+        with control.
+
+        <br />
+        <br />
+
+        <li>
+          pHsp70A > Kozak > egfp > Tnos
+          <ul>
+            a. Incubation in the dark and shifted into the light for 1 h.<br />
+            b. Incubation in the light and exposed to heat shock (40°C) for 30
+            min.
+          </ul>
+          p35S > Kozak > eGFP > Tnos (Control)
+        </li>
+
+        <br />
+        <br />
+        <br />
+
+        <div class="engi-under">
+          <p><i>Biosensor #1-2: Cold-inducible Promoter</i></p>
+        </div>
+
+        Cold-inducible promoter activity in C. vulgaris is tested by observing
+        GFP expression. <br />The fluorescence intensity was compared with
+        control.
+
+        <br />
+        <br />
+
+        <li>
+          pCnAFP>Kozak>eGFP>Tnos
+
+          <ul>
+            a. Incubation in low temperature (10°C) for 2 hour.
+          </ul>
+          p35S>Kozak>eGFP>Tnos (Control)
+        </li>
+
+        <br />
+        <br />
+        <br />
+
+        <div class="engi-under">
+          <p>
+            <i
+              >Biosensor #2: Bioswitch: Inducible Promoter - Recombinase
+              Activity</i
+            >
+          </p>
+        </div>
+
+        Recombinase activity, triggered by inducible promoters, is tested by
+        observing GFP expression. <br />The fluorescence intensity was compared
+        with control.
+
+        <br />
+        <br />
+
+        p35S>attB>mCherry>Tnos : pHSP70A>Kozak>phiC31>Tnos :
+        attP>Kozak>eGFP>Tnos
+        <br />
+        (Heat shock inducible promoter + phiC31 recombinase)
+
+        <br />
+
+        <li>
+          <ul>
+            - After recombination : p35S > attB-attP > Kozak > eGFP > Tnos<br />
+            a. Incubation in the dark and shifted into the light for 1 h.
+            <br />
+            b. Incubation in the light and exposed to heat shock (40°C) for 30
+            min.
+          </ul>
+
+          <br />
+          <br />
+
+          p35S>attB>mCherry>Tnos : pCnAFP>Kozak>phiC31>Tnos :
+          attP>Kozak>eGFP>Tnos<br />
+          (Cold inducible promoter + phiC31 recombinase)
+
+          <ul>
+            - After recombination : p35S > attB-attP > Kozak > eGFP > Tnos<br />
+            a. Incubation in low temperature (10°C) for 2 hours.
+          </ul>
+
+          <br />
+          <br />
+
+          p35S>loxP(1)>mCherry>Tnos : pHSP70A>Kozak>Cre>Tnos :
+          loxP(2)>Kozak>eGFP>Tnos <br />
+          (Heat shock inducible promoter + Cre recombinase)
+
+          <ul>
+            - After recombination : p35S > loxP(1)-loxP(2) > Kozak > eGFP > Tnos
+            <br />
+            a. Incubation in the dark and shifted into the light for 1 h.
+            <br />
+            b. Incubation in the light and exposed to heat shock (40°C) for 30
+            min.
+          </ul>
+
+          <br />
+          <br />
+
+          p35S>loxP(1)>mCherry>Tnos : pCnAFP>Kozak>Cre>Tnos :
+          loxP(2)>Kozak>eGFP>Tnos
+          <br />(Cold inducible promoter + Cre recombinase)
+          <ul>
+            - After recombination : p35S > loxP(1)-loxP(2) > Kozak > eGFP > Tnos
+            <br />
+            a. Incubation in low temperature (10°C) for 2 hours.
+          </ul>
+          p35S>eGFP>nos terminator (Control)
+        </li>
+
+        <br />
+        <br />
+        <br />
+
+        <div class="engi-under">
+          <p><i>Biosensor #3: Quorum-Sensing Promoter & Protein</i></p>
+        </div>
+
+        Quorum-Sensing promoter activity in C. vulgaris is tested by observing
+        GFP expression. <br />The expression is observed in various
+        concentrations of N-3-oxo-octanoyl homoserine lactone (C8 AHL).<br />
+        The observation is made in liquid medium with 0 μM, 0.1 μM, 1 μM, 100μM,
+        1000 μM, 10000 μM C8 AHL. The fluorescence intensity was compared with
+        control.
+
+        <br />
+        <br />
+
+        p4X(TraR)::m35S>Kozak>eGFP>Tnos : pHSP70A/pRbcS2>Kozak>VP16
+        TAD::TraR>Tnos
+        <br />
+        p4X(TraR)::m35S>Kozak>eGFP>Tnos : p35S>Kozak>VP16 TAD::TraR>Tnos
+        <br />
+        p35S>Kozak>eGFP>Tnos (Control)
+
+        <a id="link-5" href="#sidelink-5"></a>
+        <br />
+        <br />
+        <br />
+        <hr />
+      </span>
+
+      <!-- Experiment Protocol -->
+      <!-- Experiment Protocol -->
+      <!-- Experiment Protocol -->
+
+      <div class="hp-text-mask">
+        <span>Experiment Protocol</span>
+      </div>
+      <br />
+      <div class="hp-text-mask-sub" style="padding: 0 0.2vw">
+        <div><u>Microalgae Transformation</u> (Cha et al., 2012)</div>
+
+        <br />
+
+        <ol>
+          <li>
+            The mediums and supplements for microalgae transformation are
+            obtained from Kisan Bio, South Korea.
+          </li>
+        </ol>
+        <ol style="font-size: 0.9vw">
+          <li>
+            1. Supplement Luria Broth with 5 mM glucose, 50 mg/L kanamycin
+          </li>
+          <li>
+            2. Inoculate Agrobacterium. Tumefaciens (KCTC 12031) single colonies
+            in 10mL of Luria Broth
+          </li>
+          <li>
+            3. Under constant agitation at 200 rpm on a rotary shaker at 30°C,
+            culture overnight in the dark
+          </li>
+          <li>
+            4. Inoculate 5mL of overnight culture from step 3 in 50mL of same
+            medium
+          </li>
+          <li>
+            5. Under constant agitation at 200 rpm at 27°C, culture until OD600
+            = 0.8–1.2 in the dark
+          </li>
+          <li>6. Centrifuge to harvest bacterial culture</li>
+          <li>
+            7. Wash with induction medium (BG11 + 100 μM acetosyringone, pH 5.6)
+            and dilute to OD600 = 0.5
+          </li>
+          <li>
+            8. Pre-culture total of 5 × 106 Chlorella cells from a log-phase
+            culture (OD600 = 0.5–1.0) on BG11 solidified with 1.5% (w/v)
+            bacto-agar at 25°C for 5 days
+          </li>
+          <li>9. Harvest bacterial culture with induction medium</li>
+          <li>10. Mix algal pellet with 200 μL bacterial suspension</li>
+          <li>
+            11. Plate on induction medium solidified with 1.5% (w/v) bacto-agar
+          </li>
+          <li>12. Co-cultivate algae with bacteria (3 days, in dark, 25°C)</li>
+          <li>
+            13. Harvest cells with 7mL of BG11 supplemented with 500 mg/L
+            cefotaxime and 50 mg/L kanamycin to eliminate Agrobacterium (2 days,
+            in dark, 25°C)
+          </li>
+          <li>14. Measure eGFP expression</li>
+          <li>
+            15. Plate the remaining cells on selective media with 50 mg/L
+            kanamycin and 500 mg/L cefotaxime
+          </li>
+          <li>
+            16. Incubate transformed cells in dark before exposure to light (2
+            days, 25°C)
+          </li>
+          <li>
+            17. Grow cells on LB agar plates to detect any Agrobacterium (7 days
+            in dark, 25°C)
+          </li>
+        </ol>
+
+        <br />
+        <br />
+
+        <div>
+          <u>Fluorescence microplate reader assay</u> (Molino et al., 2018)
+        </div>
+
+        <br />
+
+        <ol style="font-size: 0.9vw">
+          <li>
+            1. Inoculate transformed colony in 1mL BG11 selective media and
+            incubate at 25°C under constant illumination (50 μmol photons/m2/s)
+            and constant agitation at 100–150 rpm on a rotary shaker, culture
+            for 7 days
+          </li>
+          <li>
+            2. Transfer 100 μL cells to wells of a black, clear bottom 96-well
+            plate
+          </li>
+          <li>
+            3. Set up microplate reader (ThermoFisher Scientific, USA) as table
+            1
+          </li>
+          <li>
+            4. Measure fluorescence using BG11 medium as blank and wild type
+            cells as negative control
+          </li>
+          <li>
+            5. Repeat steps 5-7 with supernatant in the Deep-well plate obtained
+            by centrifugation at 3000 ×g for 10 min
+          </li>
+          <li>6. The fluorescent signal is normalized by OD600.</li>
+        </ol>
+
+        <br />
+        <div class="text-mask-img">
+          <img
+            src="https://static.igem.wiki/teams/4310/wiki/engi-img-6.png"
+            alt="fr-img"
+            width="70%"
+          />
+        </div>
+
+        <br />
+        <br />
+
+        <div>
+          <u>Fluorescence microscopic observation of EGFP expression</u>
+          (Yang et al., 2015)
+        </div>
+
+        <ol>
+          <li>
+            The mediums and supplements for microalgae transformation are
+            obtained from Kisan Bio, South Korea.
+          </li>
+        </ol>
+        <ol style="font-size: 0.9vw">
+          <li>
+            - eGFP fluorescence was visualized by using a narrow-band filter
+            (Olympus U-FBNA, excitation filter 470–495 nm, barrier filter
+            510–550 nm).
+          </li>
+          <li>
+            - Chlorophyll autofluorescence was observed using a wide-band filter
+            (Olympus U-FBW, excitation filter 460–495 nm, barrier filter 510 nm)
+          </li>
+        </ol>
+        <hr />
+      </div>
+    </div>
   </div>
 </div>
 
