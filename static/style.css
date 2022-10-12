@@ -1153,14 +1153,7 @@ footer a:hover {
   background-color: #c8ccd0;
   display: flex;
   max-width: 100vw;
-  height: 930vh;
-}
-
-.sec-engineering {
-  background-color: #c8ccd0;
-  display: flex;
-  width: 100vw;
-  height: 930vh;
+  height: 1100vh;
 }
 
 .sec-engineering .text-mask-engi {
@@ -1204,6 +1197,11 @@ footer a:hover {
 .sec-engineering .engi-under > p {
   text-decoration: underline;
   font-size: 1.4vw;
+}
+
+.sec-engineering .reference {
+  padding-left: 4vw;
+  font-size: 0.8vw;
 }
 
 /*****   notebook   *****/
@@ -1293,6 +1291,10 @@ footer a:hover {
 .hp-text-mask {
   font-size: 2.9vw;
   font-weight: 600;
+}
+
+.hp-text-mask > ol {
+  list-style-type: decimal;
 }
 
 .hp-text-mask-sub {
