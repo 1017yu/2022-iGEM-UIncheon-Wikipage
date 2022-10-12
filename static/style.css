@@ -1145,6 +1145,67 @@ footer a:hover {
   text-align: left;
 }
 
+/*****   engineering   *****/
+/*****   engineering   *****/
+/*****   engineering   *****/
+
+.sec-engineering {
+  background-color: #c8ccd0;
+  display: flex;
+  max-width: 100vw;
+  height: 930vh;
+}
+
+.sec-engineering {
+  background-color: #c8ccd0;
+  display: flex;
+  width: 100vw;
+  height: 930vh;
+}
+
+.sec-engineering .text-mask-engi {
+  text-align: center;
+  font-size: 1.7vw;
+}
+
+.sec-engineering .sidebar-container {
+  position: relative;
+  display: block;
+  opacity: 1;
+}
+.sec-engineering .sidebar-container .sidebar-en.sec-engineering > a {
+  cursor: default;
+}
+
+.sec-engineering .sidebar-hp {
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  flex-direction: column;
+  width: 15vw;
+  height: 100vh;
+  font-size: 1.5vw;
+  text-align: center;
+  opacity: 1;
+  margin: -10vw 0px 0px 1vw;
+}
+
+.sec-engineering .sidebar-hp > a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+  padding: 0.5vw 0;
+}
+
+.sec-engineering .container-hp-1 {
+  padding: 7vw 20vw 0px 7vw;
+}
+
+.sec-engineering .engi-under > p {
+  text-decoration: underline;
+  font-size: 1.4vw;
+}
+
 /*****   notebook   *****/
 /*****   notebook   *****/
 /*****   notebook   *****/
@@ -1186,7 +1247,7 @@ footer a:hover {
 }
 
 .sec-nb .container-hp-1 {
-  padding: 13vw 20vw 0px 10vw;
+  padding: 6vw 20vw 0px 10vw;
 }
 
 /*****   HP   *****/

@@ -1,42 +1,222 @@
-{% extends "layout.html" %} {% block title %}::Engineering Success{% endblock %}
-{% block lead %}Demonstrate engineering success in a part of your project by
-going through at least one iteration of the engineering design cycle.{% endblock
-%} {% block page_content %}
+{% extends "layout.html" %} {% block title %}Engineering:: {% endblock %} {%
+block lead %}Demonstrate engineering success in a part of your project by going
+through at least one iteration of the engineering design cycle.{% endblock %} {%
+block page_content %}
 <div class="team_sec1">
   <div class="team_col0">
     <img
-      src="https://static.igem.wiki/teams/4310/wiki/team-attributions-banner.png"
+      src="https://static.igem.wiki/teams/4310/wiki/team-engineering-banner.png"
       class="banner"
     />
   </div>
 </div>
-<div class="row mt-4">
-  <div class="col">
-    <div class="bd-callout bd-callout-info">
-      <h4>Silver Medal Criterion #1</h4>
-      <p>
-        Demonstrate engineering success in a part of your project by going
-        through at least one iteration of the engineering design cycle. This
-        achievement should be distinct from your Contribution for Bronze.
-      </p>
-      <p></p>
-      <p>
-        If you plan to show engineering success by creating a new Part that has
-        been shown to work as expected, you must document your contribution on
-        the Part's Main Page on the
-        <a href="http://parts.igem.org/Main_Page">Registry</a> for your team to
-        be eligible for this criteria.
-      </p>
+<div class="sec sec-engineering">
+  <div class="sidebar-container">
+    <a id="link-1" href="#sidelink-1"></a>
+    <div class="sidebar-hp sidebar-engineering" id="sidebar-hp">
+      <br />
+      <br />
+      <br />
+      <a id="sidelink-1" href="#link-1"
+        >Golden Gate Assembly: Prefix/Suffix Block</a
+      >
+      <a id="sidelink-2" href="#link-2">General Description</a>
+      <a id="sidelink-3" href="#link-3">Detailed Description</a>
+      <a id="sidelink-4" href="#link-4">The solution</a>
+      <a id="sidelink-5" href="#link-5">Key to success</a>
+      <a href="#">⇪</a>
+    </div>
+  </div>
+
+  <div class="container-hp-1" id="containerHp1">
+    <div class="hp-text-mask">
+      <span>Golden Gate Assembly: Prefix/Suffix Block</span>
+    </div>
+    <br />
+    <div class="hp-text-mask-sub" style="padding: 0 2vw">
+      <span
+        >For efficient golden gate assembly, our team prepared a gene fragment
+        that only contains BsaI sequences and its cleavage site so that the
+        prefix and suffix could be flexibly changed and attached to both ends of
+        the transcription unit, assembled using SapI. The advantage of this
+        method is that it is possible to greatly increase the number of gene
+        fragments that can be synthesized using the golden gate assembly at once
+        without the need to use various plasmids by ordering a prefix/suffix
+        fragment at a low price. According to NEB, it was confirmed that their
+        high-fidelity restriction enzyme could synthesize up to 52 gene
+        fragments at a time. The first BsaI prefix and the last BsaI suffix have
+        EcoRI and BamHI cleavage sites for double digestion and ligation to
+        pCambia 2300 vector for agrobacterium-mediated microalgae
+        transformation.
+      </span>
+      <br />
+      <br />
+      <br />
+
+      <div class="text-mask-engi">
+        <span>[Figure 1] BsaI Prefix/Suffix </span>
+      </div>
+      <br />
+
+      <div class="text-mask-img">
+        <img
+          src="https://static.igem.wiki/teams/4310/wiki/engi-img-1.png"
+          alt="fr-img"
+          width="70%"
+        />
+        <br />
+      </div>
+      <div class="text-mask-img">
+        <img
+          src="https://static.igem.wiki/teams/4310/wiki/engi-img-2.png"
+          alt="fr-img"
+          width="70%"
+        />
+        <br />
+      </div>
+      <div class="text-mask-img">
+        <img
+          src="https://static.igem.wiki/teams/4310/wiki/engi-img-3.png"
+          alt="fr-img"
+          width="70%"
+        />
+        <br />
+      </div>
+      <div class="text-mask-img">
+        <img
+          src="https://static.igem.wiki/teams/4310/wiki/engi-img-4.png"
+          alt="fr-img"
+          width="70%"
+        />
+      </div>
+      <br />
+      <br />
+      <div class="text-mask-engi">
+        <span>[Figure 2] Simple Diagram of level 1~3 assembly</span>
+      </div>
+      <br />
+      <div class="text-mask-img">
+        <img
+          src="https://static.igem.wiki/teams/4310/wiki/engi-img-5.png"
+          alt="fr-img"
+          width="70%"
+        />
+      </div>
+      <br />
+      <a id="link-2" href="#sidelink-2"></a>
+
+      <br />
+      <br />
       <hr />
-      <p>
-        Please see the
-        <a href="https://competition.igem.org/judging/medals"
-          >2022 Medals Page</a
-        >
-        for more information.
-      </p>
+
+      <!-- General Description -->
+      <!-- General Description -->
+      <!-- General Description -->
+
+      <div class="hp-text-mask">
+        <span>General Description</span>
+      </div>
+      <br />
+      <div class="hp-text-mask-sub" style="padding: 0 0.2vw">
+        <span
+          >Our team has designed and tested various biosensors for C. vulgaris,
+          using inducible promoters and recombinases. Inducible promoters are
+          triggered only at certain conditions, working as biosensors. Our team
+          has further developed the inducible promoters into bio-switch by
+          utilizing recombinases, thereby creating C. vulgaris strain that can
+          constantly express certain genes once the switch is turned on. The
+          detailed structure of the biosensors and switches is described below.
+
+          <br />
+          <br />
+
+          In this project, two types of inducible promoters, pHsp70A (Kropat et
+          al., 1995), pCnAFP (Kim et al., 2020), two types of recombinases,
+          phiC31 (Thomson et al., 2010) and Cre (Sauer & Henderson, 1988), and a
+          quorum sensing system, pTra(4X)::m35S (You et al., 2006), are tested
+          in C. vulgaris. The expression of these bio-bricks has been tested in
+          eukaryotic cells but has not been tested specifically for C. vulgaris.
+          The purpose of this project is to validate the expression of these
+          bio-bricks for C. vulgaris and to utilize them for the development of
+          efficient biosensors and switches.
+
+          <br />
+          <br />
+
+          Our research and development will not stop at biosensors and
+          bio-switches. We designed a bio-switch using an inducible promoter and
+          recombinase, and also designed a quorum sensing system for microalgae.
+          Using these biosensors together, replacing GFP with toxin or
+          antitoxin, our team’s final goal is to develop an effective
+          biocontainment system for genetically modified microalgae-bacteria
+          consortia that can be used in wastewater treatment systems.
+        </span>
+        <a id="link-3" href="#sidelink-3"></a>
+        <br />
+        <br />
+        <br />
+        <hr />
+
+        <!-- Detailed Description for Each Biosensors -->
+        <!-- Detailed Description for Each Biosensors -->
+        <!-- Detailed Description for Each Biosensors -->
+
+        <div class="hp-text-mask">
+          <span>Detailed Description for Each Biosensors</span>
+        </div>
+        <br />
+        <div class="hp-text-mask-sub" style="padding: 0 2vw">
+          <span
+            ><div class="engi-under">
+              <p><i>Biosensor #1: Inducible Promoters (pHSP70A)</i></p>
+            </div>
+            <br />
+            <br />
+
+            In this project, two types of inducible promoters, pHsp70A (Kropat
+            et al., 1995), pCnAFP (Kim et al., 2020), two types of recombinases,
+            phiC31 (Thomson et al., 2010) and Cre (Sauer & Henderson, 1988), and
+            a quorum sensing system, pTra(4X)::m35S (You et al., 2006), are
+            tested in C. vulgaris. The expression of these bio-bricks has been
+            tested in eukaryotic cells but has not been tested specifically for
+            C. vulgaris. The purpose of this project is to validate the
+            expression of these bio-bricks for C. vulgaris and to utilize them
+            for the development of efficient biosensors and switches.
+
+            <br />
+            <br />
+
+            Our research and development will not stop at biosensors and
+            bio-switches. We designed a bio-switch using an inducible promoter
+            and recombinase, and also designed a quorum sensing system for
+            microalgae. Using these biosensors together, replacing GFP with
+            toxin or antitoxin, our team’s final goal is to develop an effective
+            biocontainment system for genetically modified microalgae-bacteria
+            consortia that can be used in wastewater treatment systems.
+          </span>
+          <br />
+          <hr />
+
+          <div class="hp-text-mask">
+            <span><br />Summary <br /></span>
+          </div>
+          <div class="span-sub">
+            <span>
+              Fundraising through startup is almost only opportunity to
+              undergraduates in Korea.<br />
+              Don’t be afraid to enroll into business registration.<br />
+              Go to a startup support institution of your university. They will
+              teach you well.<br />
+              Don’t inform how it works to judges. Better to tell your estimated
+              profit.<br />
+              Naming similar biotech companies really helps.<br />
+              Something visual is critical to persuade judges.<br />
+              Pay the fee with a legit excuse such as a business promotion.<br />
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
 {% endblock %}
