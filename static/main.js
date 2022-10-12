@@ -43,7 +43,7 @@ window.addEventListener(
 );
 
 menu.addEventListener("mouseover", function onMouseOver() {
-  hiddenDiv.style.height = "516px";
+  hiddenDiv.style.height = "300px";
   hiddenDiv.style.transition = "height 0.4s ease";
 });
 
