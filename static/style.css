@@ -1387,15 +1387,15 @@ footer a:hover {
   padding: 6vw 20vw 0px 10vw;
 }
 
-/*****   HP   *****/
-/*****   HP   *****/
-/*****   HP   *****/
+/*****   Human Practice   *****/
+/*****   Human Practice   *****/
+/*****   Human Practice   *****/
 
 .sec-hp {
   background-color: #c8ccd0;
   display: flex;
   width: 100vw;
-  height: 1030vh;
+  height: 1130vh;
 }
 
 .sec-hp .sidebar-container {
@@ -1553,6 +1553,66 @@ footer a:hover {
   padding: 7vw 20vw 0px 10vw;
 }
 
+/*****   education   *****/
+/*****   education   *****/
+/*****   education   *****/
+
+.sec-edu {
+  background-color: #c8ccd0;
+  display: flex;
+  max-width: 100vw;
+  height: 450vh;
+}
+.sec-edu .edu-text-mask {
+  text-align: center;
+}
+.sec-edu .text-mask-engi {
+  text-align: center;
+  font-size: 1.7vw;
+}
+
+.sec-edu .edu-flex-1 {
+  display: flex;
+  font-size: 1.2vw;
+  font-weight: 350;
+  bottom: 0;
+  align-items: flex-end;
+}
+
+.sec-edu .edu-flex-1 .edu-flex-text > span {
+  font-size: 1.2vw;
+  font-weight: 350;
+  bottom: 0;
+}
+
+.sec-edu .sidebar-container {
+  position: relative;
+  display: block;
+  opacity: 1;
+}
+.sec-edu .sidebar-container .sidebar-en.sec-edu > a {
+  cursor: default;
+}
+
+.sec-edu .sidebar-hp {
+  opacity: 0;
+}
+
+.sec-edu .sidebar-hp > a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+  padding: 0.5vw 0;
+}
+
+.sec-edu .container-hp-1 {
+  padding: 7vw 20vw 0 20vw;
+}
+
+.sec-edu .reference {
+  padding-left: 4vw;
+  font-size: 0.8vw;
+}
+
 /*****   footer   *****/
 /*****   footer   *****/
 /*****   footer   *****/
@@ -1565,14 +1625,13 @@ footer a:hover {
 }
 
 .footer-container {
-  margin-left: 27vw;
 }
 
 .footer_main_menu {
-  right: 200px;
   display: -webkit-flex;
-  display: flex;
   margin-bottom: 9vw;
+  text-align: center;
+  margin-left: 6vw;
 }
 
 .footer_menu {
