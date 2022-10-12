@@ -825,7 +825,7 @@ footer a:hover {
 
 .team_sec2 {
   width: 100%;
-  height: 620vh;
+  height: 840vh;
   left: 5px;
   right: 5px;
   background-color: #c8ccd0;
@@ -838,7 +838,7 @@ footer a:hover {
 
 .team_col {
   width: 100vw;
-  height: 60vh;
+  height: 80vh;
   display: flex;
   align-items: center;
 }
@@ -898,12 +898,20 @@ footer a:hover {
 }
 
 .team_col_odd .members_intro {
-  max-width: 70vw;
+  background-color: #f4f8f8;
+  max-width: 50vw;
+  padding: 1vw 0 1vw 3vw;
+  border: 2px solid #000;
+  border-radius: 10px;
 }
 
 .team_col_even .members_intro {
+  background-color: #f4f8f8;
+  border-radius: 10px;
+  border: 2px solid #000;
+  padding: 1vw 3vw 1vw 0;
   margin-left: 9vw;
-  max-width: 60vw;
+  max-width: 50vw;
   text-align: right;
 }
 
@@ -932,7 +940,7 @@ footer a:hover {
 .team_col_odd .members_dep {
   display: flex;
   flex-direction: column;
-  max-width: 70%;
+  max-width: 90%;
 
   padding-top: 3vw;
 }
@@ -955,7 +963,7 @@ footer a:hover {
 .sec-att {
   width: 100vw;
   height: 760vh;
-  background-color: #c8ccd0;
+  background-color: #f4f8f8;
   text-align: center;
   overflow: scroll;
 }
@@ -967,7 +975,7 @@ footer a:hover {
 .sec-att .att-container {
   text-align: left;
   display: inline-block;
-  padding: 0 100px;
+  padding: 0 10vw;
   background-color: #f4f8f8;
   max-width: 80vw;
   margin-top: 3.3333vw;
@@ -998,6 +1006,11 @@ footer a:hover {
   font-size: 1.33vw;
   text-align: left;
   margin: 2vw 0 0 1vw;
+  font-weight: 400;
+}
+
+.sec-att .text-mask-img {
+  text-align: center;
 }
 
 .intr {
@@ -1076,6 +1089,7 @@ footer a:hover {
 
 .collabo-intr {
   text-align: left;
+  font-weight: 400;
 }
 
 /*****   description   *****/
