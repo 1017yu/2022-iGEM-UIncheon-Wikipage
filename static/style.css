@@ -333,6 +333,10 @@ footer a:hover {
   margin-bottom: 20px;
 }
 
+.sec-1 .container-1 .col-1 .text-mask > span {
+  line-height: 4.5vw;
+}
+
 .text-mask > span {
   font-size: 4.2vw;
   line-height: 3.8333vw;
@@ -717,7 +721,7 @@ footer a:hover {
 .sec-5 {
   background-color: #f4f8f8;
   width: 100vw;
-  height: 180vh;
+  height: 140vh;
   display: flex;
   flex-direction: column;
   overflow: scroll;
@@ -1141,6 +1145,50 @@ footer a:hover {
   text-align: left;
 }
 
+/*****   notebook   *****/
+/*****   notebook   *****/
+/*****   notebook   *****/
+
+.sec-nb {
+  background-color: #c8ccd0;
+  display: flex;
+  width: 100vw;
+  height: 930vh;
+}
+
+.sec-nb .sidebar-container {
+  position: relative;
+  display: block;
+  opacity: 0;
+}
+.sec-nb .sidebar-container .sidebar-nb > a {
+  cursor: default;
+}
+
+.sec-nb .sidebar-nb {
+  display: flex;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  flex-direction: column;
+  width: 15vw;
+  height: 100vh;
+  font-size: 1.5vw;
+  text-align: center;
+  opacity: 1;
+  margin: -10vw 0px 0px 2vw;
+}
+
+.sec-nb .sidebar-nb > a {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 1);
+  padding: 0.5vw 0;
+}
+
+.sec-nb .container-hp-1 {
+  padding: 13vw 20vw 0px 10vw;
+}
+
 /*****   HP   *****/
 /*****   HP   *****/
 /*****   HP   *****/
@@ -1198,7 +1246,7 @@ footer a:hover {
   font-size: 1vw;
   padding: 1vw;
   background-color: #5f6f94;
-  color: #bccef8;
+  color: #fff;
 }
 
 .container-hp-1 .text-mask-img {
@@ -1315,7 +1363,7 @@ footer a:hover {
 }
 
 .footer-container {
-  margin-left: 20vw;
+  margin-left: 27vw;
 }
 
 .footer_main_menu {
