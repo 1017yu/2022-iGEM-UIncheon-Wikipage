@@ -1273,6 +1273,10 @@ footer a:hover {
 .sec-fd .sidebar-container {
   position: relative;
   display: block;
+  opacity: 0;
+}
+.sec-fd .sidebar-container .sidebar-fd > a {
+  cursor: default;
 }
 
 .sec-fd .sidebar-hp {
