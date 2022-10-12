@@ -1203,7 +1203,7 @@ footer a:hover {
   background-color: #c8ccd0;
   display: flex;
   max-width: 100vw;
-  height: 1100vh;
+  height: 250vh;
 }
 
 .sec-engineering .text-mask-engi {
@@ -1226,11 +1226,12 @@ footer a:hover {
   position: sticky;
   top: 0;
   flex-direction: column;
+  cursor: default;
   width: 15vw;
   height: 100vh;
   font-size: 1.5vw;
   text-align: center;
-  opacity: 1;
+  opacity: 0;
   margin: -10vw 0px 0px 1vw;
 }
 
